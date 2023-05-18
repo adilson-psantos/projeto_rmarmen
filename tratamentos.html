@@ -6,27 +6,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="16x16" href="imagens\favicon-16x16.png">
     <title>Instituto Armem Degumerjian</title>
+    <style>
+        body {
+          margin: 0;
+          font-family: "Lato", sans-serif;
+        }
+        
+        .sidebar {
+          margin: 0;
+          padding: 0;
+          width: 200px;
+          background-color: #ffffff;
+          position: static;
+          height: 200%;
+          overflow: auto;
+          font-size: 100%;
+        }
+        
+        .sidebar a {
+          display: block;
+          color: #7a7676;
+          padding: 20px;
+          text-decoration: none;
+        }
+         
+        .sidebar a.active {
+          background-color: #ffffff;
+          color: #fbfcfc;
+        }
+        
+        .sidebar a:hover:not(.active) {
+          background-color: #0abab5;
+          color: white;
+        }
+        
+        @media screen and (max-width: 600px) {
+          .sidebar {
+            width: 100%;
+            height: auto;
+            position: static;
+          }
+          .sidebar a {
+            float: left;
+            
+            }
+        }
+        
+        @media screen and (max-width: 400px) {
+          .sidebar a {
+            text-align: center;
+            float: none;
+          }
+        }
+
+        .rodape-prin {
+            background-color: #0abab5(0, 0, 0);       
+            clear: inline-start;
+            padding: 28px;         
+            color: #ffffff(250,255,250);
+            font-size: 15px;
+            font-family: "arial", sans-serif;
+        }
+
+        .redes-sociais li {
+            display: inside;
+            float: none;
+            width: 60px;
+            height: 40px;
+        }
+        </style>
 </head>
 <body>
     <header>
         <img src="imagens\InstitutoAD.png"  alt="Logotipo do Instituto Armem Degumerjian" width="100" height="100" >      
         <h1> <font face = "serif"><font Color = "#0ABAB5">Tratamentos</font></h1>
-        <nav>
-            <ul>
-                <li> <a href="index.html">Home</a></li>
-                <li> <a href="tratamentos.html">Tratamentos</a></li>
-                <li> <a href="cursos.html">Cursos</a></li>
-                <li> <a href="agenda.html">Agenda</a></li>
-                <li> <a href="videos.html">Vídeos</a></li>                
-                <li> <a href="depoimentos.html">Depoimentos</a></li>  
-                <li> <a href="formulario.html">Cadastro</a></li>              
-            </ul>
-        </nav>
     </header>
     <main>
         <section>
+                <div class="sidebar">
+                    <a href="index.html">Home</a>
+                    <a href="tratamentos.html">Tratamentos</a>
+                    <a href="cursos.html">Cursos</a>
+                    <a href="agenda.html">Agenda</a>
+                    <a href="videos.html">Vídeos</a>              
+                    <a href="depoimentos.html">Depoimentos</a>
+                </div>
+                          
+                
             <div class="card">
-                <img src="imagens\Energia-Fria-Vibracional-Curadora.jpg" alt="Energia Energia-Fria-Vibracional-Curadora"width="300" height="250"> 
+                <img src="imagens\Energia-Fria-Vibracional-Curadora.jpg" alt="Energia Energia-Fria-Vibracional-Curadora"width="250" height="200"> 
                 <details>
                     <summary>"Energia Fria Vibracional Curadora"</summary>
                     <p>Ármen Aplica energia fria vibracional curadora
@@ -55,11 +123,22 @@
         </section>
         <section>
             <div class="card">
-                <img src="imagens\radiestesia-magnetica_imantada_1.PNG" alt="radiestesia-magnetica_imantada_1"width="300" height="250">
+                <img src="imagens\radiestesia-magnetica_imantada_1.PNG" alt="radiestesia-magnetica_imantada_1"width="250" height="200">
                 <details>
                     <summary>Radiestesia Magnética Imantada</summary>
                     <p>Utiliza o pêndulo de cristal ou pedra como principal instrumento radiestésico, pois este emana uma Frequência de ondas magnéticas e gravitacional de forma espiral ou em linha reta desenhando formas holográficas e geométricas em volta da pessoa, objeto ou local a ser trabalhado (casa ou trabalho). No momento da aplicação a pessoa fica Imantada, seu corpo começa se mover espontaneamente e a espiral de Luz entra em ação.</p>
                     <p>Esta é a propriedade inicial da Radiestesia Magnética Imantada, os obstáculos inconscientes são removidos (implantes que vem das memórias traumáticas e chips), como que aspirados pelos chacras, removendo aos poucos o peso do medo, atraindo a conquista da abundância. 
+                    </p>
+                </details>
+            </div>
+        </section>
+        <section>
+            <div class="card">
+                <img src="imagens\RMA.PNG" alt="Registro da Memória Celular"width="250" height="200">
+                <details>
+                    <summary>RMA - Registro da Memória Celular </summary>
+                    <p>As células são responsáveis por toda nossa formação física, emocional e cerebral. Quando o espermatozoide atinge o óvulo na nossa concepção, o núcleo da célula se forma com todas as informações ancestrais (DNA). A partir desse momento as células se multiplicam e dá informação física… posteriormente o espírito acopla- se para a formação do embrião. A princípio predomina o físico; as informações instintivas vêm com o desenvolvimento do feto.
+                    <p>Aqui eu trabalho nesse principio indo resgatar registros nessas celulas, na concepção do ser humano identificando possíveis traumas ja desde a sua iniciação no utero materno.</p>
                     </p>
                 </details>
             </div>

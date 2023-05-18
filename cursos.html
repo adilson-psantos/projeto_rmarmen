@@ -6,25 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="16x16" href="imagens\favicon-16x16.png">
     <title>Instituto Armem Degumerjian</title>
+    <style>
+        body {
+          margin: 0;
+          font-family: "Lato", sans-serif;
+        }
+        
+        .sidebar {
+          margin: 0;
+          padding: 0;
+          width: 200px;
+          background-color: #ffffff;
+          position: static;
+          height: 200%;
+          overflow: auto;
+          font-size: 100%;
+        }
+        
+        .sidebar a {
+          display: block;
+          color: #7a7676;
+          padding: 20px;
+          text-decoration: none;
+        }
+         
+        .sidebar a.active {
+          background-color: #ffffff;
+          color: #fbfcfc;
+        }
+        
+        .sidebar a:hover:not(.active) {
+          background-color: #0abab5;
+          color: white;
+        }
+        
+        @media screen and (max-width: 600px) {
+          .sidebar {
+            width: 100%;
+            height: auto;
+            position: static;
+          }
+          .sidebar a {
+            float: left;
+            
+          }
+        }
+        
+        @media screen and (max-width: 400px) {
+          .sidebar a {
+            text-align: center;
+            float: none;
+          }
+        }
+
+        .rodape-prin {
+            background-color: #0abab5(0, 0, 0);       
+            clear: inline-start;
+            padding: 28px;         
+            color: #ffffff(250,255,250);
+            font-size: 15px;
+            font-family: "arial", sans-serif;
+        }
+
+        .redes-sociais li {
+            display: inside;
+            float: none;
+            width: 60px;
+            height: 40px;
+        }
+        </style>
 </head>
 <body>
     <header>
         <img src="imagens\logo_rmarmem.PNG"  alt="Logotipo do Instituto Armem Degumerjian" width="150" height="100" >       
         <h1> <font face = "serif"><font Color = "#0ABAB5">Cursos</font></h1>
-        <nav>
-            <ul>
-                <li> <a href="index.html">Home</a></li>
-                <li> <a href="tratamentos.html">Tratamentos</a></li>
-                <li> <a href="cursos.html">Cursos</a></li>
-                <li> <a href="agenda.html">Agenda</a></li>
-                <li> <a href="videos.html">Vídeos</a></li>                
-                <li> <a href="depoimentos.html">Depoimentos</a></li>  
-                <li> <a href="formulario.html">Cadastro</a></li>             
-            </ul>
-        </nav>
+        
     </header>
     <main>
         <section>
+            <div class="sidebar">
+                <a href="index.html">Home</a>
+                <a href="tratamentos.html">Tratamentos</a>
+                <a href="cursos.html">Cursos</a>
+                <a href="agenda.html">Agenda</a>
+                <a href="videos.html">Vídeos</a>              
+                <a href="depoimentos.html">Depoimentos</a>
+            </div>
             <div class="card">
                 <img src="imagens\radiestesia-magnetica_imantada.PNG" alt="Armem realizando o uso do pendulo na mesa Venturyum"width="200" height="300">
                 <img src="imagens\radiestesia-magnetica_imantada_curso.PNG" alt="Alunos no Cruso de radiestesia-magnetica_imantada_curso "width="200" height="300">
@@ -49,7 +116,7 @@
                         </p>
                 </details>
             </div>
-        </section> 
+        </section>   
         <section>
             <div class="card">
                 <img src="" alt="">
@@ -58,6 +125,10 @@
                     <p></p>
                 </details>
             </div>
-        </section>   
-    </main>
+        </section>  
+        </main>
+       
+</body>
+</html>
+   
     
