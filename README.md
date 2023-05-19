@@ -3,3 +3,4 @@
 # 13/05/2023 Removido do diretório o arquivo sprint.pdf e alocado em um novo diretório já informado para o Luciano
 # 16/05/2023 Incluido a pagina formulario para cadastro de contato do cliente e incluido texto na area de cursos
 # 18/05/2023 Incluido o conteudo da pagina de vídeos com integração em html com youtube e acrescentado o conteudo da pagina tratamentos!
+#19/05/2023 Incluído arquivo css e realizadas alterações nos arquivos html.
