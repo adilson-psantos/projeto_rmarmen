@@ -1,9 +1,43 @@
-body {
-  margin: 0;
-  font-family: "Lato", sans-serif;
+* {
+  box-sizing: border-box;
+  padding: 1em;
   
 }
 
+body {
+  background-color: #ffffff;
+  margin: 0;
+  font-family: Arial, serif;
+    
+}
+
+#main {
+  display: flex;
+  min-height: calc(90vh - 40vh);
+}
+#main > article {
+  flex: 1;
+  font-size: 20px;
+}
+#main > nav, {
+  flex: 0 0 20vw;
+  background: #ffffff;
+}
+
+
+#main > nav {
+  order: -1; 
+}
+
+header, footer, article, nav, {
+  padding: top, 
+
+}
+  
+header, footer {
+  background: #ffffff;
+  height: 20vh;
+}
 .sidebar {
   margin: 0;
   padding: 0;
@@ -62,6 +96,17 @@ body {
     font-style: italic;
   }
   
+  .principal {
+    font-family: Arial, serif;
+    font-size: larger;
+    color: #7a7676;
+    margin:auto;
+    width: 200%;
+    text-align: center;
+    border: 3px solid #0abab5;
+    padding: 10px;
+
+  }
 .rodape-prin {
     background-color: #0abab5(0, 0, 0);       
     clear: inline-start;
@@ -73,7 +118,7 @@ body {
 
 .redes-sociais li {
     display: inside;
-    float: none;
+    float: inline-end;
     width: 60px;
     height: 40px;
 }
