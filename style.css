@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  padding: 1em;
+  padding: 1em ;
   
 }
 
@@ -15,23 +15,26 @@ body {
   display: flex;
   min-height: calc(90vh - 40vh);
 }
-#main > article {
+#main article {
   flex: 1;
   font-size: 20px;
 }
-#main > nav, {
-  flex: 0 0 20vw;
+
+#main nav {
+  flex : 0 0 20vw;
   background: #ffffff;
 }
 
 
-#main > nav {
+#main nav {
   order: -1; 
 }
 
-header, footer, article, nav, {
-  padding: top, 
-
+header {
+  padding-bottom: 90%;
+}
+header, footer, article, nav {
+  padding: 1em 0; 
 }
   
 header, footer {
@@ -62,7 +65,7 @@ header, footer {
 }
 
 .sidebar a:hover:not(.active) {
-  background-color: #0abab5;
+  background-color: #1496ec;
   color: white;
 }
 
