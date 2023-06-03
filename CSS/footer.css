@@ -1,0 +1,15 @@
+.rodape-prin {
+    background-color: #0abab5(0, 0, 0);       
+    clear: inline-start;
+    padding: 28px;         
+    color: #ffffff(250,255,250);
+    font-size: 15px;
+    font-family: "arial", sans-serif;
+}
+
+.redes-sociais li {
+    display: inside;
+    float: inline-end;
+    width: 60px;
+    height: 40px;
+}
