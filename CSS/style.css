@@ -11,6 +11,14 @@ body {
     
 }
 
+header div{
+  display: flex;
+  width: 100%;
+  height: 145%;
+  justify-content: center;
+  
+}
+
 #main {
   display: flex;
   min-height: calc(90vh - 40vh);
@@ -30,25 +38,7 @@ body {
   order: -1; 
 }
 
-header {
-  padding-bottom: 90%;
-}
 
-header img{
-  display: flex;
-  margin: 5px;
-  padding:5px;
-  justify-content: space-between;
-  flex-direction: column-reverse;
-}  
-header, footer, article, nav {
-  padding: 1em 0; 
-}
-  
-header, footer {
-  background: #ffffff;
-  height: 20vh;
-}   
 
 .testimonial { 
     margin-bottom: 20px;
