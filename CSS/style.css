@@ -33,6 +33,14 @@ body {
 header {
   padding-bottom: 90%;
 }
+
+header img{
+  display: flex;
+  margin: 5px;
+  padding:5px;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+}  
 header, footer, article, nav {
   padding: 1em 0; 
 }
@@ -40,7 +48,7 @@ header, footer, article, nav {
 header, footer {
   background: #ffffff;
   height: 20vh;
-}
+}   
 
 .testimonial { 
     margin-bottom: 20px;
