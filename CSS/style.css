@@ -51,26 +51,16 @@ header img{
   justify-content: space-between;
   flex-direction: column-reverse;
 }  
-header, footer, article, nav {
+header, article, nav {
   padding: 1em 0; 
 }
   
-header, footer {
+header{
   background: #ffffff;
   height: 20vh;
 }   
 
-.testimonial { 
-    margin-bottom: 20px;
-  }
-  .testimonial .author {
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  .testimonial .content {
-    font-style: italic;
-  }
-  
+
   .principal {
     font-family: Arial, serif;
     font-size: larger;

@@ -12,9 +12,9 @@
     float: inline-end;
     width: 60px;
     height: 40px;
-}
-
-footer {
+    
+}footer {
+    padding: 1em 0; 
     background: #ffffff;
     height: 20vh;
-}    
+}
