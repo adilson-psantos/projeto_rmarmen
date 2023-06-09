@@ -1,0 +1,10 @@
+.videos {
+    font-family: Arial, serif;
+    font-size: larger;
+    color: #7a7676;
+    margin:auto;
+    width: 200%;
+    text-align: center;
+    border: 3px solid #0abab5;
+    padding: 10px;
+  }
