@@ -11,12 +11,18 @@
 
 .testimonial { 
     margin-bottom: 20px;
+    text-decoration: none;
 }
-  .testimonial .author {
+.testimonial .author {
     font-weight: bold;
     margin-bottom: 5px;
+
+     
 }
-  .testimonial .content {
+.testimonial .content {
     font-style: italic;
-}
-  
+  }
+.Pacientes {
+  justify-content: center;
+
+  }
