@@ -1,4 +1,15 @@
-.testimonial {
+.testimonial { 
+    margin-bottom: 20px;
+  }
+  .testimonial .author {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .testimonial .content {
+    font-style: italic;
+  }
+  
+  .principal {
     font-family: Arial, serif;
     font-size: larger;
     color: #7a7676;
@@ -8,6 +19,7 @@
     border: 3px solid #0abab5;
     padding: 10px;
   }
+<<<<<<< HEAD
 
 .testimonial { 
     margin-bottom: 20px;
@@ -26,3 +38,5 @@
   justify-content: center;
 
   }
+=======
+>>>>>>> a0adf9591e59bc5dfb4a4c2034e8889170247dcb

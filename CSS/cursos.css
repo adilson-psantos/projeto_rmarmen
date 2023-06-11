@@ -8,3 +8,81 @@
     border: 3px solid #0abab5;
     padding: 10px;
   }
+
+* {
+    box-sizing: content-box;
+    padding: 2px ;
+    
+  }
+  
+  /*BODY*/
+  
+  body {
+    background-color: #ffffff;
+    margin: 0;
+    padding:0 1em;
+    font-family: Arial, serif;
+      
+  }
+  
+  header div{
+    display: flex;
+    width: 100%;
+    height: 145%;
+    justify-content: center;
+    
+  }
+  
+  header {
+    padding-bottom: 90%;
+  }
+  
+  header img{
+    display: flex;
+    margin: 5px;
+    padding:5px;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+  }  
+  
+  header{
+    background: #ffffff;
+    height: 20vh;
+  }   
+
+  header, footer, nav {
+    padding: 1em 0; 
+  }
+
+  #main {
+    display: flex;
+    flex-direction: row;
+    
+  }
+  #main div {
+    display:flex;
+    font-size: 25px;
+    flex-direction: row;
+    padding-top: 5% ;
+  }
+  
+  #main nav {
+    flex : 0 0 20vw;
+    background: #ffffff;
+  }
+  
+  
+  #main nav {
+    order: -1; 
+  }
+  
+  p{
+    display: flex;
+    justify-content: flex-start;
+    color: #7a7676;
+    padding:0% ;
+  
+  }
+  
+  
+  
