@@ -38,7 +38,7 @@ header, footer, article, nav {
   padding: 1em 0; 
 }
   
-header{
+
 header{
   background: #ffffff;
   height: 20vh;
@@ -57,12 +57,9 @@ header{
 #main nav {
   flex : 0 0 20vw;
   background: #ffffff;
-}
-
-
-#main nav {
   order: -1; 
 }
+
 
 p{
   display: flex;
