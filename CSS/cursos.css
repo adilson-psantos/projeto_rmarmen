@@ -23,21 +23,26 @@ header img{
   display: flex;
   margin: 5px;
   padding:5px;
- align-items: center;
+  align-items: center;
   flex-direction: row;
 }  
+
+header, footer, article, nav {
+  padding: 1em 0; 
+}
 
 header{
   background: #ffffff;
   height: 20vh;
 }   
 
-header, footer, nav {
+header, footer, article, nav {
   padding: 1em 0; 
 }
+
 main {
 display: flex;
-padding: 0;
+padding: 15px;
 padding-top: 78px;
 flex-direction: row;
 flex-wrap: nowrap;
@@ -65,20 +70,15 @@ nav {
   flex: 0 0 600px;
   flex-grow: 6;
   padding-top: 15px;
-  height: 25em;
+  height: 26em;
   margin: 5px;
   border-radius: 1em;
   border: 1px solid #0abab5;
   box-shadow: 2px 2px 6px 0px #0abab5;
 }
-.card img {
-  width: 10em;
-  padding:1,5 0em ;
-  flex-direction:center;
-  align-items: center;
-}
+
 .card .text {
-  padding: 10px 100px 10px;;
+  padding: 4px 100px 10px;;
 }
 .card .text > button {
   background: #0abab5;
