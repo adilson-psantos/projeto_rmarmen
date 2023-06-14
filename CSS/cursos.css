@@ -10,6 +10,7 @@ body{
   font-family:Arial, Helvetica, sans-serif;
   color:#7a7676;
 }
+
 header div{
   display: flex;
   width: 100%;
@@ -18,13 +19,12 @@ header div{
   
 }
 
-
 header img{
   display: flex;
   margin: 5px;
   padding:5px;
-  justify-content: space-between;
-  flex-direction: column-reverse;
+ align-items: center;
+  flex-direction: row;
 }  
 
 header{
@@ -35,144 +35,55 @@ header{
 header, footer, nav {
   padding: 1em 0; 
 }
-/* main*/
-#main{
-  min-height: calc(90vh - 40vh);
-  display: flex;
-  align-content:center;
-  align-items: center;
-  padding-top: 104px;
-
-}
-
-#main section{
+main {
 display: flex;
-flex-direction: column;
-align-content:center;
-}
+padding: 0;
+padding-top: 78px;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: flex-start;
+align-items: center;
 
-#main .card{
-  align-content:end;
-  background-color: #fff;
-  width: 24em;
-  height: 35em;
-  border-radius: 1em;
-  box-shadow: 0px 0px 5px 6px #0abab5;
 }
+nav {
+  height: 482px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-top: 1px;
+  width: 300px;
+  order:-1;
 
-#main .card .inscricao{
-  height: 2em;
-  background-color: #0abab5;
-  border-radius: 1em 1em 0 0;
-  font-family: Arial, Helvetica, sans-serif;
+}
+.cards {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrapp;
   align-items: center;
-  color: #fff;
+  order:1;
 }
 
-#main .card .curso1{
-  text-align: center;
+.card {
+  flex: 0 0 600px;
+  flex-grow: 6;
+  padding-top: 15px;
+  height: 25em;
+  margin: 5px;
+  border-radius: 1em;
+  border: 1px solid #0abab5;
+  box-shadow: 2px 2px 6px 0px #0abab5;
 }
-#main .card .curso1 .radiestesia{
+.card img {
   width: 10em;
   padding:1,5 0em ;
+  flex-direction:center;
+  align-items: center;
 }
-
-#main .card .titulo-curso1{
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  font-size: 2rem;
+.card .text {
+  padding: 10px 100px 10px;;
 }
-
-#main .card .descricao-curso1{
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: justify;
-  font-size: 0.8rem;
-  margin: 0 1em 1em 1em;
-}
-
-#main .card .ul{
-  display: flex;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  justify-content: center;
-  margin: 0 1em 1em 1em;
-
-}
-
-nav {
- flex : 0 0 20vw;
-background: #ffffff;
-order: -1; 
-}
-
-.sidebar {
-  margin: 0;
-  padding: 1.4em;
-  width: 200px;
-  background-color: #ffffff;
-  position: static;
-  height: 200%;
-  overflow: auto;
-  font-size: 100%;
-  
-}
-
-
-
-.sidebar a {
-  display: flex;
-  color: #7a7676;
-  padding: 20px;
-  text-decoration: none;
-}
- 
-.sidebar a.active {
-  background-color: #ffffff;
-  color: #fbfcfc;
-}
-
-.sidebar a:hover:not(.active) {
-  background-color: #0abab5;
+.card .text > button {
+  background: #0abab5;
   color: white;
-}
-
-@media screen and (max-width: 600px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: static;
-  }
-  .sidebar a {
-    float: left;
-
-    }
-}
-
-@media screen and (max-width: 400px) {
-  .sidebar a {
-    text-align: center;
-    float: none;
-  }
-}
-.rodape-prin {
-  background-color: #0abab5(0, 0, 0);       
-  clear: inline-start;
-  padding: 28px;         
-  color: #ffffff(250,255,250);
-  font-size: 15px;
-  font-family: "arial", sans-serif;
-}
-
-.redes-sociais li {
-  display: inside;
-  float: none;
-  width: 60px;
-  height: 40px;
-  
-}footer {
-  padding: 1em 0; 
-  background: #ffffff;
-  height: 20vh;
+  padding: 10px;
+  width: 100%;
+  margin:2%;
 }
