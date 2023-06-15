@@ -66,14 +66,13 @@ padding:20px ;
 display: flex;
 align-items: center;
 justify-content: center;
-padding-top: 80px;
-margin-right: 12px;
 flex-wrap:wrap; 
 }
 .container .card{
   position: relative;
   padding: 10px;
-  width: 300px;
+  width: 500px;
+  height: 500px;
   background-color: #fff;
   margin: 20px;
   border: 1px solid #0abab5;
@@ -105,11 +104,31 @@ flex-wrap:wrap;
 .container.card.content a {
   position: relative ;
   display: inline-block;
-  padding: 10px 10px;
-  background-color:  black;
+  padding: 10px 20px;
+  background: color #000;;
   color:#fff;
   border-radius: 40px;
   text-decoration: none;
   transition: 0.5s;
   outline: none;
+  margin-top: 20px;
+}
+.container .card:hover {
+  background-color:#0abab5;
+  color: white;
+  margin-top: -30px;
+  box-shadow: 2px 20px 25px #0abab5;
+  border-color: #0abab5;
+}
+
+.container.card:hover img{
+  filter: invert(1);
+}
+
+.container.card:hover p{
+  color:white;
+}
+
+.container.card:hover a{
+  color:black;
 }
