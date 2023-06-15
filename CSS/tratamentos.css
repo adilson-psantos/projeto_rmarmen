@@ -102,7 +102,7 @@ flex-wrap:wrap;
 }
 
 .container.card.content a{
-  position: relative ;
+  position: relative;
   display: inline-block;
   padding: 10px 20px;
   background: color #000;
