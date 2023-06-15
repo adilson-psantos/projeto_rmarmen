@@ -61,8 +61,27 @@ nav {
 /*Container*/
 
 .container{
-background-color: aqua;
-border: 3px solid red;
-padding: 15px;
-display: grid;
+    width:auto;
+    padding:20px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+.container.card{
+  position: relative;
+  padding: 10px;
+  width: 500px;
+  height: 500px;
+  background-color: #fff;
+  margin: 20px;
+  border: 1px solid #0abab5;
+  border-radius: 20px;
+  overflow:hidden;
+  transition: 0.5s;
+  text-align: center;
+  box-shadow: 0px 0px 5px 6px #0abab5;
+  align-items: center;
+  justify-content:center;
 }
