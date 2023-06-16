@@ -83,4 +83,7 @@ align-items: center;
     color:#666;
     transition: 0.5s;
   }
-  
+  .card img{
+    width: 200px;
+    height: 200px;
+  }
