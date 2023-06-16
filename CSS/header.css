@@ -10,7 +10,7 @@ header div{
     display: flex;
     margin: 5px;
     padding:5px;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column-reverse;
   }  
   
