@@ -14,8 +14,7 @@ header div{
   display: flex;
   width: 100%;
   height: 145%;
-  justify-content: center;
-  
+  justify-content: center;  
 }
 
 header img{
@@ -61,19 +60,47 @@ nav {
 /*Container*/
 
 .container{
-    width:100% ;
+    width: 100% ;
     height: 100%;
-    overflow: hidden;
+    padding: 20px;
+    /*overflow: hidden;*/
     display: flex;
     justify-content:center;
-    align-items: center
-  
+    align-items: center;
+    flex-wrap:wrap;
 }
 
 .container.card{
-position: fixed;
-top: 0;
-left: 0;
-object-fit: cover;
-width: 100%;
+  position:relative;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  border:2px  solid black;
+  border-radius: 20px ;
+  text-align: center;
+  font-size: small;
+}
+
+.rodape-prin {
+  background-color: #0abab5(0, 0, 0);       
+  clear: inline-start;
+  padding: 28px;         
+  color: #ffffff(250,255,250);
+  font-size: 15px;
+  font-family: "arial", sans-serif;
+}
+
+.redes-sociais li {
+  display: inside;
+  float: none;
+  width: 60px;
+  height: 40px;
+  
+}
+
+.footer {
+  padding: 1em 0; 
+  background: #ffffff;
+  height: 20vh;
 }
