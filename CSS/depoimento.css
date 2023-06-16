@@ -1,42 +1,125 @@
-.testimonial { 
-    margin-bottom: 20px;
-  }
-  .testimonial .author {
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  .testimonial .content {
-    font-style: italic;
-  }
-  
-  .principal {
-    font-family: Arial, serif;
-    font-size: larger;
-    color: #7a7676;
-    margin:auto;
-    width: 200%;
-    text-align: center;
-    border: 3px solid #0abab5;
-    padding: 10px;
-  }
-<<<<<<< HEAD
-
-.testimonial { 
-    margin-bottom: 20px;
-    text-decoration: none;
+*{
+  box-sizing:content-box;
+  margin: 0;
+  padding: 1;
 }
-.testimonial .author {
-    font-weight: bold;
-    margin-bottom: 5px;
-
-     
+/* body */
+body{
+  background-color: #ffffff;
+  font-family:Arial, Helvetica, sans-serif;
+  color:#7a7676;
 }
-.testimonial .content {
-    font-style: italic;
-  }
-.Pacientes {
+
+header div{
+  display: flex;
+  width: 100%;
+  height: 145%;
   justify-content: center;
+  
+}
 
-  }
-=======
->>>>>>> a0adf9591e59bc5dfb4a4c2034e8889170247dcb
+header img{
+  display: flex;
+  margin: 5px;
+  padding:5px;
+  align-items: center;
+  flex-direction: row;
+}  
+
+header, footer, article, {
+  padding: 1em 0; 
+}
+
+header{
+  background: #ffffff;
+  height: 20vh;
+}   
+
+header, footer, article, {
+  padding: 1em 0; 
+}
+
+main {
+display: flex;
+padding: 15px;
+padding-top: 78px;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: flex-start;
+align-items: center;
+
+}
+/*Container*/
+
+.container{
+width:auto;
+padding:20px ;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap:wrap; 
+}
+.container .card{
+  position: relative;
+  padding: 10px;
+  width: 500px;
+  height: 500px;
+  background-color: #fff;
+  margin: 20px;
+  border: 1px solid #0abab5;
+  border-radius: 20px;
+  overflow:hidden;
+  transition: 0.5s;
+  text-align: center;
+  box-shadow: 0px 0px 5px 6px #0abab5;
+  align-items: center;
+  justify-content:center;
+}
+.container.card img{
+  transition: 0.5s;
+}
+.container.card h1{
+  font-size: 2rem;
+}
+
+.container.card.content{
+  padding: 20px;
+  text-align: center;
+}
+
+.container.card.content p{
+  color:#666;
+  transition: 0.5s;
+}
+
+.container.card.content a{
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  background: color #000;
+  color:#fff;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: 0.5s;
+  outline: none;
+  margin-top: 20px;
+}
+.container .card:hover{
+  background-color:#0abab5;
+  color: white;
+  margin-top: -30px;
+  box-shadow: 2px 20px 25px #0abab5;
+  border-color: #0abab5;
+}
+
+.container.card:hover img{
+  filter: invert(1);
+}
+
+.container.card:hover p{
+  color:white;
+}
+
+.container.card:hover a{
+  color:black;
+}
