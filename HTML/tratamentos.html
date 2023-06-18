@@ -9,8 +9,9 @@
     <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
     <link href = "https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel = "stylesheet">
     <!--Link do arquivo CSS-->
-    <link rel ="stylesheet" type="text/css" href="/CSS/style.css" >
+    <!--<link rel ="stylesheet" type="text/css" href="/CSS/style.css" > -->
     <link rel="stylesheet"  type="text/css" href="/CSS/sidebar.css">
+    <link rel="stylesheet" href="/CSS/header.css">
     <link rel ="stylesheet" type="text/css"  href="/CSS/footer.css">
     <link rel="stylesheet" href="/CSS/tratamentos.css">
     <link rel="icon" type="image/jpg" sizes="16x16" href="/IMG/novalogo.jpg">
@@ -22,8 +23,8 @@
         <img src="/IMG/novalogo.jpg"  alt="Logotipo do Instituto Ármem Degumerjian"> 
     </div>            
 </header>
-  <div id="main">
-    <div class="container">
+<main>
+  <nav>
     <section>
       <div class="sidebar">
         <a href="/index.html">Home</a>
@@ -31,48 +32,40 @@
         <a href="/HTML/cursos.html">Cursos</a>
         <a href="/HTML/agenda.html">Agenda</a>
         <a href="/HTML/videos.html">Vídeos</a>
-        <a href="/HTML/formulario.html">Cadastro</a>               
+        <a href="/HTML/formulario.html">Cadastro</a>
         <a href="/HTML/depoimentos.html">Depoimentos</a>
       </div>
-    </section>  
-    <!--Primeiro Card--> 
-    <div class="card">
-      <div class="img" >
-        <img src="/IMG/Energia-Fria-Vibracional-Curadora.jpg" alt="Energia Energia-Fria-Vibracional-Curadora"width="250" height="200"> 
-      </div>  
-      <h1>"Energia Fria Vibracional Curadora"</h1>
-      <div class="content">
+    </section>
+  </nav>
+  <!--Primeiro Card--> 
+  <article class="card">    
+    <img src="/IMG/Energia-Fria-Vibracional-Curadora.jpg" alt="Energia Energia-Fria-Vibracional-Curadora"width="250" height="200"> 
+      <div class="text"> 
+        <h1>Energia Fria Vibracional Curadora</h1>
         <p>A Cura Vibracional através da Energia Fria Vibracional é a própria Física Quântica decodificada pela Frequência de Luz e Som. Ela é Cósmica, era usada pelos Essênios, por Jesus e Maria.
         </p><br>
-        <a href="#">Saiba Mais</a> 
+        <a href="#">Atendimento</a> 
       </div>       
-    </div> 
-     <!--Segundo Card-->           
-    <div class="card">
-        <div class="img">
-          <img src="/IMG/radiestesia-magnetica_imantada.PNG" alt="radiestesia-magnetica_imantada_1"width="250" height="200">
-        <h1> "RadiestesiaMagnética Imantada"</h1>
-        <div class="content">
-            <p>Utiliza o pêndulo de cristal ou pedra como principal instrumento radiestésico, pois este emana uma Frequência de ondas magnéticas e gravitacional de forma espiral ou em linha reta desenhando formas holográficas e geométricas em volta da pessoa, objeto ou local a ser trabalhado. 
-            </p><br>
-            <a href="#">Saiba Mais</a>                   
-        </div>
-      </div>
-    </div> 
-       <!--Terceiro Card--> 
-       <div class="card">
-        <div class="img">
-            <img src="/IMG/RMA.PNG" alt="Registro da Memória Celular"width="250" height="200">
-            <h1>RMA - Registro da Memória Celular</h1>
-            <div class="content">
-          <p>As células são responsáveis por toda nossa formação física, emocional e cerebral. Quando o espermatozoide atinge o óvulo na nossa concepção, o núcleo da célula se forma com todas as informações ancestrais (DNA). 
-          </p><br>
-          <a href="#">Saiba Mais</a>                   
-          </div>
-      </div>      
-      </div>
+  </article>
+  <!--Segundo Card-->
+<article class="card">              
+  <img src="/IMG/radiestesia-magnetica_imantada.PNG" alt="radiestesia-magnetica_imantada_1"width="250" height="200">	
+       <h1>Radiestesia Magnética Imantada</h1>
+          <p>Utiliza o pêndulo de cristal ou pedra como principal instrumento radiestésico, pois este emana uma Frequência de ondas magnéticas e gravitacional de forma espiral ou em linha reta desenhando formas holográficas e geométricas em volta da pessoa, objeto ou local a ser trabalhado. 
+           </p><br>
+           <a href="#">Atendimento</a>                   
     </div>
-  
+</article> 
+<!--Terceiro Card--> 
+ <article class="card"> 
+ <div class="text">   
+   <img src="/IMG/RMA.PNG" alt="Registro da Memória Celular"width="250" height="200">
+     <h1>RMA - Registro da Memória Celular</h1>
+        <p>As células são responsáveis por toda nossa formação física, emocional e cerebral. Quando o espermatozoide atinge o óvulo na nossa concepção, o núcleo da célula se forma com todas as informações ancestrais (DNA). 
+      </p><br>
+         <a href="#">Atendimento</a>
+   </div>		  
+</article> 
   </main>
 </body>
 </html>
