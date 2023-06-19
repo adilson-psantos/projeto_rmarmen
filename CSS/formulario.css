@@ -1,3 +1,12 @@
+
+nav {
+  height: 482px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-top: 1px;
+  width: 300px;
+  order:-1; 
+}
 .formulario {
     font-family: Arial, serif;
     font-size: larger;

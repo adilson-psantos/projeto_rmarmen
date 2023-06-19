@@ -14,7 +14,7 @@ header div{
     flex-direction: column-reverse;
   }  
   
-  header, footer, article, nav {
+  header, article, nav {
     padding: 1em 0; 
   }
    
