@@ -84,3 +84,7 @@ flex-wrap:wrap;
   color:#666;
   transition: 0.5s;
 }
+.card img{
+  width: 70px;
+  height: 70px;
+}
