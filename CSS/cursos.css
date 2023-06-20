@@ -61,7 +61,7 @@ nav {
 }
 .cards {
   display: flex;
-  flex-wrap: wrapp;
+  flex-wrap: wrap;
   align-items: center;
   order:1;
 }

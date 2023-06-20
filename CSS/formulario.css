@@ -1,84 +1,34 @@
-<<<<<<< HEAD
-
-=======
-*{
-  box-sizing:content-box;
-  margin: 0;
-  padding: 1;
-}
-
-/* body */
-body{
-  background-color: #ffffff;
-  font-family:Arial, Helvetica, sans-serif;
-  color:#7a7676;
-}
-
-header div{
-  display: flex;
-  width: 100%;
-  height: 145%;
-  justify-content: center;
-  
-}
-
-header img{
-  display: flex;
-  margin: 5px;
-  padding:5px;
-  align-items: center;
-  flex-direction: row;
-}  
-
-header, footer, article, nav {
-  padding: 1em 0; 
-}
-
-header{
-  background: #ffffff;
-  height: 20vh;
-}   
-
-header, footer, article, nav {
-  padding: 1em 0; 
-}
-
 main {
-display: flex;
-padding: 15px;
-padding-top: 78px;
-flex-direction: row;
-flex-wrap: nowrap;
-justify-content: flex-start;
-align-items: center;
-
+  display: flex;
+  padding: 15px;
+  padding-top: 78px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
 }
->>>>>>> 6ba4b720acfedabb5b56d3e2e9c16207f481ea1b
 nav {
   height: 482px;
   padding-top: 15px;
   padding-bottom: 10px;
   margin-top: 1px;
   width: 300px;
-<<<<<<< HEAD
   order:-1; 
 }
-.formulario {
-    font-family: Arial, serif;
-    font-size: larger;
-    color: #7a7676;
-    margin:auto;
-    width: 200%;
-    text-align: center;
-    border: 3px solid #0abab5;
-    padding: 10px;
-  }
-=======
-  order:-1;
-
-}
-
-.form {
+.cadastro {
   display: flex;
-}
->>>>>>> 6ba4b720acfedabb5b56d3e2e9c16207f481ea1b
+  justify-content: center;
+  font-family: Arial, serif;
+  font-size: larger;
+  color: #ffffff;
+  background-color: #0abab5;
+  width: 61%;
+  text-align: center;
+  padding: 10px;
+  padding-top: 15px;
+  height: 26em;
+  margin: 5px;
+  border-radius: 3em;
+  border: 1px solid #0abab5;
+  
+  }
