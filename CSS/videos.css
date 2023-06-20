@@ -60,23 +60,14 @@ nav {
 }
 
 .card{
-    width: 100% ;
-    height: 100%;
-    padding: 20px;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    flex-wrap:wrap;
-}
-
-.card{
   position:relative;
   padding: 10px;
-  width: 100px;
-  height: 100px;
+  width: 420px;
+  height: 205px;
   margin: 20px;
   border:2px  solid black;
   border-radius: 20px ;
   text-align: center;
   font-size: small;
+  flex-wrap: nowrap
 }
