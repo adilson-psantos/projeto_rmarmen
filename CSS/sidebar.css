@@ -3,7 +3,7 @@
     padding: 1.4em;
     width: 200px;
     background-color: #ffffff;
-    position: static;
+    position: relative;
     height: 200%;
     overflow: auto;
     font-size: 100%;
