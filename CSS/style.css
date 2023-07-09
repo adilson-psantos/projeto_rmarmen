@@ -8,7 +8,7 @@
 
 body {
   font-family:Arial, Helvetica, sans-serif;
-  color:#7a7676;
+  color:#5c5a5a;
 }
 
 #main {
@@ -17,14 +17,15 @@ body {
   padding-top: 78px;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: center;  
+   
 }
 #main article {
   display:flex;
-  font-size: 25px;
+  font-size: 20px;
+  text-align:justify ;
   flex-direction: column;
-  padding-top: 5% ;
+  flex-wrap: wrap;
+  padding-top: 4% ;
 }
 
 #main nav {
@@ -37,10 +38,8 @@ body {
 }
 
 p{
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  color: #7a7676;
+ 
+  color: #5c5a5a;
   padding:0% ;
 
 }
