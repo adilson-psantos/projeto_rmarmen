@@ -19,13 +19,24 @@ body {
   flex-wrap: nowrap;
    
 }
+
 #main article {
   display:flex;
   font-size: 20px;
   text-align:justify ;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   padding-top: 4% ;
+}
+
+#main article .round-container img {
+  display: flex;
+  position:absolute ;
+  left: 50%;
+  border-radius: 100%;
+  width: 12rem;
+  height: 12rem;
+  
 }
 
 #main nav {

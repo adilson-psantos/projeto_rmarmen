@@ -24,11 +24,19 @@ nav {
   background-color: #0abab5;
   width: 61%;
   text-align: center;
-  padding: 10px;
+  padding: 5px;
   padding-top: 15px;
-  height: 26em;
+  height: 20em;
   margin: 5px;
   border-radius: 3em;
   border: 1px solid #0abab5;
   
+  }
+  button{
+    background:#ffffff;
+    color:#0abab5;
+    width: 35px;
+    padding: 2px 20px;
+    border-radius: 3px;
+    border: 1px solid #0abab5;
   }
