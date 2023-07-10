@@ -26,15 +26,18 @@ header img{
   flex-direction: row;
 }  
 
-header{
+header {
   display:flex;
-  
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 600px;
 }  
 
 main {
 display: flex;
 padding: 15px;
-padding-top: 78px;
+padding-top: 0px;
 flex-direction: row;
 flex-wrap: nowrap;
 justify-content: flex-start;
