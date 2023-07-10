@@ -1,3 +1,8 @@
+:root{
+  --color-white:#ffffff;
+  --color-blue:#0abab5;
+  --color-grey:#7f7c82;
+}
 main {
   display: flex;
   padding: 15px;
@@ -32,6 +37,10 @@ nav {
   border: 1px solid #0abab5;
   
   }
+  .cadastro placeholder{
+  
+  }
+
   button{
     background:#ffffff;
     color:#0abab5;

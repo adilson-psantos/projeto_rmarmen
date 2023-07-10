@@ -13,7 +13,7 @@ body {
 
 #main {
   display: flex;
-  padding: 0;
+  padding: 1em;
   padding-top: 78px;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -26,16 +26,17 @@ body {
   text-align:justify ;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-top: 4% ;
+  padding-top: 5% ;
 }
 
 #main article .round-container img {
   display: flex;
-  position:absolute ;
+  position:absolute;
   left: 50%;
   border-radius: 100%;
   width: 12rem;
   height: 12rem;
+  padding-bottom: 1%;
   
 }
 
