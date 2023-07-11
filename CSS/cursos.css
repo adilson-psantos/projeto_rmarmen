@@ -50,7 +50,7 @@ justify-content: flex-start;
 align-items: center;
 
 }
-nav {
+aside nav {
   height: 482px;
   padding-top: 15px;
   padding-bottom: 10px;
@@ -59,16 +59,18 @@ nav {
   order:-1;
 
 }
-.cards {
+article {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   order:1;
-}
-
-.card {
   flex: 0 0 600px;
-  flex-grow: 6;
   padding-top: 15px;
   height: 26em;
   margin: 5px;

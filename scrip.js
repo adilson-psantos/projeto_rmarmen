@@ -5,13 +5,11 @@ function carregaPage() {
             imagem:"IMG\InstitutoADcorpo.png"
         }, 
     }   
+     console.log("carregaPage")
 
-    if(document.getElementById("content") != null){
-        let idPost=document.getElementById("content").innerHTML;
-        let content = document.getElementById("content");
-
+       let logo = document.getElementById("logo");
         for (let conteudo in principal){
-        content.innerHTML +=     
+        logo.innerHTML +=     
         "<article>" +
         "<p>" +
         principal[conteudo].descricao +
@@ -24,10 +22,5 @@ function carregaPage() {
         "</article>";
     }
 }
+
 carregaPage();
-    
-    
-    
-    
-    
-    
