@@ -1,8 +1,9 @@
 header div{
     display: flex;
     width: 366px;
-    height: 150px;;
-    justify-content: center;
+    height: 150px;
+    align-content: center;
+    align-items: center;
     
   }
   
@@ -16,7 +17,7 @@ header div{
     flex-direction: column-reverse;
   }  
   
-  header, article, nav {
+  header, nav {
     padding: 1em 0; 
   }
    

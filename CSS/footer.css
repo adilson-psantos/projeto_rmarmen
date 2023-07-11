@@ -14,8 +14,8 @@
 
 .content{
   float: inline-start;
-  width: 92%;
-  margin: 0 4%;
+  width: 100%;
+  margin: 0 1%;
   padding: 20px 0px;
 
 }
@@ -30,8 +30,9 @@
     height: 130px;
 }
 .colunafooter { 
-    width:20%; 
-    height:auto; 
+    width: 253px;
+    height: 150px;
+    padding-bottom: 10%;
     float:left; 
     margin-bottom:2em;
 }
@@ -113,6 +114,15 @@ p {
   transition:0.2s;
 }
 .colunafooter .redesocial:hover { 
+  color: #0abab5;
+  transition:0.2s;
+}
+.colunafooter a{
+  color:#7a7676;
+  cursor: pointer;
+  text-decoration: none;
+}
+.colunafooter a:hover { 
   color: #0abab5;
   transition:0.2s;
 }

@@ -1,15 +1,23 @@
-const cadastro =document.getElementById("botaoEnviar").addEventListener("click",validaFormulario)     
+const form = document.getElementById('form');
+const campos = document.querySelectorAll('.required');
+const spans = document.querySelectorAll('.span-required');
+const emailRegex= /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 
-function validaFormulario(){                                                                            
-  if(document.getElementById("nome").value != "" && 
-  document.getElementById("email").value != "" 
-  && document.getElementById("telefone").value != "" &&
-  document.getElementById("informacao").value != ""){
-  alert("Cadastro realizado com sucesso!Aguarde a nossa resposta.")
-
+function validaNome(){
+  if(campos[0].value.length <3)
+  {
+    console.log('NOME DEVE TER 3 CARACTERES');
   }else{
+    console.log('VALIDADO O NOME');
+ }
+}
+validaNome()
 
-    alert("Por favor, preencha os campos obrigatórios!")
-  }
-}  
-validaFormulario()
+function validaEmail(){
+  if(emailRegex[0].value.length =/^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/)
+  {
+    console.log('DIGITE UM EMAIL VALIDO');
+  }else{
+    console.log('VALIDADO O NOME');
+ }
+}
