@@ -11,18 +11,27 @@
     <script src="https://kit.fontawesome.com/7694110e97.js" crossorigin="anonymous"></script>
     <!--Link do arquivo CSS-->
     <!--<link rel ="stylesheet" type="text/css" href="/CSS/style.css" > -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet"  type="text/css" href="/CSS/sidebar.css">
     <link rel="stylesheet" href="/CSS/header.css">
     <link rel ="stylesheet" type="text/css"  href="/CSS/footer.css">
     <link rel="stylesheet" href="fonts-icones.css">
     <link rel="stylesheet" href="/CSS/tratamentos.css">
     <link rel="icon" type="image/jpg" sizes="16x16" href="/IMG/novalogo.jpg">
+    <script src="/JS/tratamentos.js" defer></script>
     <title>Instituto Armem Degumerjian</title>
 </head>
 <body>
   <header>  
-    <div>          
-        <img src="/IMG/novalogo.jpg"  alt="Logotipo do Instituto Ármem Degumerjian"> 
+    <div class="theme">
+      <input type="checkbox" name="change-theme" id="change-theme">
+          <label for="change-theme">
+            <i class="bi bi-sun"></i>
+            <i class="bi bi-moon"></i>
+          </label>  
+    </div>
+    <div>   
+      <img src="/IMG/novalogo.jpg"  alt="Logotipo do Instituto Ármem Degumerjian"> 
     </div>            
 </header>
 <main>
@@ -46,7 +55,7 @@
         <h1>Energia Fria Vibracional Curadora</h1>
         <p>A Cura Vibracional através da Energia Fria Vibracional é a própria Física Quântica decodificada pela Frequência de Luz e Som. Ela é Cósmica, era usada pelos Essênios, por Jesus e Maria.
         </p><br>
-        <a href="#">Atendimento</a>            
+        <button class="bnt">Atendimento</button>            
       </div> 
   </article>
      <!--Segundo Card-->           
@@ -57,7 +66,7 @@
           <p>Utiliza o pêndulo de cristal ou pedra como principal instrumento radiestésico, pois este emana uma Frequência de ondas magnéticas e gravitacional de forma espiral ou em linha reta desenhando formas holográficas e geométricas em volta da pessoa, objeto ou local a ser trabalhado. 
         </div>  
             </p><br>
-            <a href="#">Atendimento</a>                   
+            <button class="bnt">Atendimento</button>                   
       </article> 
        <!--Terceiro Card--> 
        <article class="card">
@@ -67,7 +76,7 @@
               <p>As células são responsáveis por toda nossa formação física, emocional e cerebral. Quando o espermatozoide atinge o óvulo na nossa concepção, o núcleo da célula se forma com todas as informações ancestrais (DNA). 
             </div>  
           </p><br>
-          <a href="#">Atendimento</a>  
+          <button class="bnt">Atendimento</button>  
         </article>                     
     </main>
     <footer class="footerContainer">
@@ -75,7 +84,7 @@
       <div class="content">
           <!--Coluna 1 Footer -->
           <div class="logotipo">
-              <span><img src = "IMG\InstitutoADcorpo.png" alt = "Logotipo do Instituto Ármen Degurmedjian"></span>
+              <span><img src = "/IMG/InstitutoADcorpo.png" alt = "Logotipo do Instituto Ármen Degurmedjian"></span>
           </div>
           <!--Coluna 2 Footer -->
           <div class="colunafooter">
