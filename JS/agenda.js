@@ -1,5 +1,5 @@
-let meses = ["Janeiro", "Fevereiro", "Marco", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro",
-    "Novembro", "Dezembro"]
+let meses = ["Janeiro", "Fevereiro", "Marco", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro","Novembro", "Dezembro"]
+
 
 let data = new Date()
 let diaNumero = data.getDay()
@@ -13,6 +13,8 @@ ativo.classList.add("atual")
 let h1 = document.createElement("h1")
 h1.innerHTML = dia
 ativo.appendChild(h1)
+
+console.log(ativo)
 
 let h5 = document.createElement("h5")
 h5.innerHTML = mes

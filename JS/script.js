@@ -5,7 +5,7 @@ function carregaPage() {
             imagem:"IMG\InstitutoADcorpo.png"
         }, 
     }   
-     console.log("carregaPage")
+     console.log(principal)
 
        let logo = document.getElementById("logo");
         for (let conteudo in principal){
@@ -24,3 +24,4 @@ function carregaPage() {
 }
 
 carregaPage();
+
