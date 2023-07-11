@@ -12,21 +12,19 @@
     <link rel="stylesheet" type="text/css" href="/CSS/footer.css">
     <link rel="stylesheet"  type="text/css" href="/CSS/header.css">
     <link rel="icon" type="image/jpg" sizes="16x16" href="/IMG/novalogo.jpg">
-    <link rel="stylesheet" href="/CSS/agenda.css">
-    <script src="/JS/agenda.js" defer></script>
+    <link rel="stylesheet" href="/CSS/eventos.css">
+    <script src="/JS/eventos.js" defer></script>
     <title>Instituto Armem Degumerjian</title>
 </head>
   <header> 
     <div>          
         <img src="/IMG/novalogo.jpg"  alt="Logotipo do Instituto Ármem Degumerjian"> 
     </div>    
+    <div>
+        <h3><strong>Escolha uma data e horario</strong></h3><br>
+    </div>
 </header>
-<div>
-    <h3><strong>Escolha uma data e horario</strong></h3><br>
-</div>
-<body>
-  <main>
-    <nav>
+<main>
       <section> 
           <div class="sidebar">
                <a href="/index.html">Home</a>
@@ -38,20 +36,58 @@
                <a href="/HTML/depoimentos.html">Depoimentos</a>
           </div>
        </section>
-    </nav>
-    <ul class="semana">
-        <li>Dom</li>
-        <li>Seg</li>
-        <li>Ter</li>
-        <li>Qua</li>
-        <li>Qui</li>
-        <li>Sex</li>
-        <li>Sab</li>
-    </ul>
+    </main>
+    <body>
+        <div id="container">
+        <div id="header">
+            <div id="monthDisplay"></div>
     
-      </main> 
-      <footer class="footerContainer">
-              
+            <div>
+                <button id="backButton">Voltar</button>
+                <button id="nextButton">Próximo</button>
+            </div>
+    
+        </div>
+    
+        <div id="weekdays">
+            <div>Domingo</div>
+            <div>Segunda-feira</div>
+            <div>Terça-feira</div>
+            <div>Quarta-feira</div>
+            <div>Quinta-feira</div>
+            <div>Sexta-feira</div>
+            <div>Sábado</div>
+        </div>
+    
+    
+        <!-- div dinamic -->
+        <div id="calendar"></div>
+    
+    
+    </div>
+    
+    <div id="newEventModal">
+        <h2>New Evente</h2>
+    
+        <input id="eventTitleInput" placeholder="Event Title" />
+    
+        <button id="saveButton"> Salvar</button>
+        <button id="cancelButton">Cancelar</button>
+    </div>
+    
+    <div id="deleteEventModal">
+        <h2>Evento</h2>
+    
+        <div id="eventText"></div><br>
+    
+    
+        <button id="deleteButton">Deletar</button>
+        <button id="closeButton">Fechar</button>
+    </div>
+    
+    <div id="modalBackDrop"></div>
+    </body>
+    <footer class="footerContainer">
         <div class="content">
             <!--Coluna 1 Footer -->
             <div class="logotipo">
@@ -70,7 +106,6 @@
                      <li><a href="/HTML/depoimentos.html">Depoimentos</a></li>
                 </ul>
             </div> 
-            
             <!--Coluna 3 Footer -->        
             <div class="colunafooter">
                 <div class="tituloFooter"><i class="fa-solid fa-share-nodes"
@@ -116,8 +151,6 @@
 
                 </p>
             </div>
-            
         </div>    
-    </footer>
-</body>  
+    </footer>  
 </html>
