@@ -7,21 +7,20 @@ function carregaPage() {
     }   
      console.log(principal)
 
-       let logo = document.getElementById("logo");
-        for (let conteudo in principal){
-        logo.innerHTML +=     
-        "<article>" +
-        "<p>" +
-        principal[conteudo].descricao +
-        "</p>" +
-        "<div class = round-conteiner>" +
-        "<img src =>" +
-        principal[conteudo].imagem +
-        "</>" +
-        "</div>" +
-        "</article>";
-    }
+     let logo = document.getElementById("logo");
+     for (let conteudo in principal){
+     logo.innerHTML +=     
+     "<article>" +
+     "<p>" +
+     principal[conteudo].descricao +
+     "</p>" +
+     "<div class = round-conteiner>" +
+     "<img src =>" +
+     principal[conteudo].imagem +
+     "</>" +
+     "</div>" +
+     "</article>";
+ }
 }
-
 carregaPage();
 
