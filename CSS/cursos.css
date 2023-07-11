@@ -82,10 +82,21 @@ article {
 .card .text {
   padding: 4px 100px 10px;;
 }
-.card .text > button {
+.card .text > a button {
   background: #0abab5;
   color: white;
   padding: 10px;
   width: 100%;
   margin:2%;
+  border-radius: 1em;
+  border: 1px solid #0abab5;
+}
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+    height: auto;
+    position: static;
+    text-align: center;
+    float: none;
+  }
 }

@@ -122,6 +122,10 @@ p {
   cursor: pointer;
   text-decoration: none;
 }
+.colunafooter a:hover { 
+  color: #0abab5;
+  transition:0.2s;
+}
 .footer_copyrights {
   background-color:#f4f4f4;
   width:106%;
