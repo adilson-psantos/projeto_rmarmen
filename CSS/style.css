@@ -1,6 +1,6 @@
-* {
-  box-sizing: content-box;
-  padding: 2px ;
+:root {
+  --fa-style-family-classic: "Font Awesome 6 Free";
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
   
 }
 
@@ -17,7 +17,7 @@ body {
   padding-top: 78px;
   flex-direction: row;
   flex-wrap: nowrap;
-   
+    
 }
 
 #main article {
@@ -26,17 +26,22 @@ body {
   text-align:justify ;
   flex-direction: row;
   flex-wrap: wrap;
+  padding: 1em;
   padding-top: 5% ;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
-#main article .round-container img {
+#main .round-container img {
   display: flex;
-  position:absolute;
-  left: 50%;
+  position:relative;
+  right: 10%;
   border-radius: 100%;
+  border: 1px solid #0abab5;
+  box-shadow: 2px 2px 6px 0px #0abab5;
   width: 12rem;
   height: 12rem;
-  padding-bottom: 1%;
+ 
   
 }
 
@@ -49,9 +54,11 @@ body {
   order:-1; 
 }
 
-p{
- 
-  color: #5c5a5a;
-  padding:0% ;
+#main article p{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 1%;
+    margin: 0 78px 0 ;
 
 }
