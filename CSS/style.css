@@ -14,7 +14,7 @@ body {
 #main {
   display: flex;
   padding: 1em;
-  padding-top: 78px;
+  padding-top: 50px;
   flex-direction: row;
   flex-wrap: nowrap;
     
@@ -26,12 +26,17 @@ body {
   text-align:justify ;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 1em;
+  padding: 5%;
   padding-top: 5% ;
   margin-right: 10%;
   margin-left: 10%;
 }
+#main article h1{
+text-align: center;
+align-content: center;
+width: 800px;
 
+} 
 #main .round-container img {
   display: flex;
   position:relative;
@@ -58,7 +63,8 @@ body {
     display: flex;
     flex-direction: column;
     text-align: justify;
-    padding: 1%;
+    padding: 0%;
     margin: 0 78px 0 ;
+
 
 }
