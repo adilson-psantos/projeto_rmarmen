@@ -1,9 +1,30 @@
-html{
+header{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+  }
+  header img{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+  main {
+  height: 300px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-top: 1px;
+  width: 200px;
+  border:-1;
+}
 
+html{
 
   --body-color:#FFFCFF ;
 
-  --header-color:#d36c6c;
+  --header-color:#0abab5;
 
   --header-button:#0abab5;
 
@@ -19,7 +40,8 @@ html{
 
   --modal-event: #e8f4fa;
 
-  --color-day:white;
+
+ --color-day:white;
   
 }  
  
@@ -142,7 +164,7 @@ button {
   border-radius: 3px;
   outline: none;
   border: none;
-  box-shadow: 0px 0px 3px #0abab5;
+  box-shadow: 0px 0px 3px gray;
 }
 #eventTitleInput.error {
   border: 2px solid red;
@@ -166,3 +188,4 @@ button {
   position: absolute;
   background-color: rgba(0,0,0,0.8);
 }
+
