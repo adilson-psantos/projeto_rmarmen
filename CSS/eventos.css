@@ -5,7 +5,7 @@ html{
 
   --header-color:#d36c6c;
 
-  --header-button:#92a1d1;
+  --header-button:#0abab5;
 
   --color-weekdays: #247BA0;
   
@@ -15,7 +15,7 @@ html{
 
   --current-day:#e8f4fa;
 
-  --event-color: #58bae4;
+  --event-color: #0abab5;
 
   --modal-event: #e8f4fa;
 
@@ -23,20 +23,28 @@ html{
   
 }  
  
- header div{
-    display: flex;
-    width: 300px;
-    height: 150px;;
-    justify-content: center;
-    
-  }
-
 body {
-  display: flex;
   margin-top: 50px;
   justify-content: center;
   background-color: var(--body-color);
 }
+#main {
+  display: flex;
+  padding: 1em;
+  padding-top: 50px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+    
+}
+#main nav {
+  height: 482px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-left: 5px;
+  width: 300px;
+  order:-1; 
+}
+
 button {
   width: 75px;
   cursor: pointer;
@@ -60,7 +68,8 @@ button {
   background-color:var(--header-button);
 }
 #container {
-  width: 770px;
+  width: 800px;
+  height: 500px;
 }
 #weekdays {
   width: 100%;

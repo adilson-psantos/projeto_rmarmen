@@ -14,7 +14,7 @@ function validaNome(){
 validaNome()
 
 function validaEmail(){
-  if(emailRegex[0].value.length =/^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/)
+  if(emailRegex[0].value =/^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/)
   {
     console.log('DIGITE UM EMAIL VALIDO');
   }else{
