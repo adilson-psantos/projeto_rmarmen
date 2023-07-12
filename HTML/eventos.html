@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt_BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,150 +7,155 @@
     <!--Link do fontawsome-->
     <script src="https://kit.fontawesome.com/7694110e97.js" crossorigin="anonymous"></script>
     <!--Link do arquivo CSS-->
-    <link rel="stylesheet" type="text/css" href="/CSS/style.css">
-    <link rel="stylesheet" type="text/css" href="/CSS/sidebar.css">
+    <link rel="stylesheet" type="text/css" href="/CSS/style.css" >
+    <link rel="stylesheet"  type="text/css" href="/CSS/sidebar.css">
     <link rel="stylesheet" type="text/css" href="/CSS/footer.css">
-    <link rel="stylesheet" href="/CSS/eventos.css">
+    <link rel="stylesheet"  type="text/css" href="/CSS/header.css">
     <link rel="icon" type="image/jpg" sizes="16x16" href="/IMG/novalogo.jpg">
+    <link rel="stylesheet" href="/CSS/eventos.css">
     <script src="/JS/eventos.js" defer></script>
-    <title>Eventos</title>
+    <title>Instituto Armem Degumerjian</title>
 </head>
-  <header> 
-    <div>          
-        <img src="/IMG/novalogo.jpg"  alt="Logotipo do Instituto Ármem Degumerjian"> 
-    </div>    
-    <div>
-        <h3><strong>Escolha uma data e horario</strong></h3><br>
-    </div>
-</header>
-<main>
-      <section> 
-          <div class="sidebar">
-               <a href="/index.html">Home</a>
-               <a href="/HTML/tratamentos.html">Tratamentos</a>
-               <a href="/HTML/cursos.html">Cursos</a>
-               <a href="/HTML/eventos.html">Eventos</a>
-               <a href="/HTML/videos.html">Vídeos</a>
-               <a href="/HTML/formulario.html">Cadastro</a>               
-               <a href="/HTML/depoimentos.html">Depoimentos</a>
-          </div>
-       </section>
-    </main>
-    <body>
+<body>
+    <header> 
+        <div>          
+         <img src="/IMG/novalogo.jpg"  alt="Logotipo do Instituto Ármem Degumerjian"> 
+        </div>    
+    </header>
+    <div id="main">
+        <nav>
+            <section>
+                <div class="sidebar">
+                    <a href="index.html">Home</a>
+                    <a href="/HTML/tratamentos.html">Tratamentos</a>
+                    <a href="/HTML/cursos.html">Cursos</a>
+                    <a href="/HTML/eventos.html">Eventos</a>
+                    <a href="/HTML/videos.html">Vídeos</a>
+                    <a href="/HTML/formulario.html">Cadastro</a>               
+                    <a href="/HTML/depoimentos.html">Depoimentos</a>
+                </div>
+            </section>
+        </nav>    
+        
         <div id="container">
-        <div id="header">
-            <div id="monthDisplay"></div>
-    
-            <div>
-                <button id="backButton">Voltar</button>
-                <button id="nextButton">Próximo</button>
+            <div id="topo">
+                <div id="monthDisplay"></div>
+
+                <div>
+                    <button id="backButton">Voltar</button>
+                    <button id="nextButton">Próximo</button>
+                </div>
             </div>
-    
         </div>
-    
+
         <div id="weekdays">
-            <div>Domingo</div>
-            <div>Segunda-feira</div>
-            <div>Terça-feira</div>
-            <div>Quarta-feira</div>
-            <div>Quinta-feira</div>
-            <div>Sexta-feira</div>
-            <div>Sábado</div>
+                <div>Domingo</div>
+                <div>Segunda-feira</div>
+                <div>Terça-feira</div>
+                <div>Quarta-feira</div>
+                <div>Quinta-feira</div>
+                <div>Sexta-feira</div>
+                <div>Sábado</div>
         </div>
-    
-    
+            
         <!-- div dinamic -->
         <div id="calendar"></div>
-        
+
+        <div id="newEventModal">
+            <h2>New Evente</h2>
+
+            <input id="eventTitleInput" placeholder="Event Title" />
+
+            <button id="saveButton"> Salvar</button>
+            <button id="cancelButton">Cancelar</button>
+        </div>
+
+        <div id="deleteEventModal">
+            <h2>Evento</h2>
+
+            <div id="eventText"></div>
+            <br>    
+                <button id="deleteButton">Deletar</button>
+                <button id="closeButton">Fechar</button>
+            </div>
+
+            <div id="modalBackDrop"></div>
     </div>
-    
-    <div id="newEventModal">
-        <h2>New Evente</h2>
-    
-        <input id="eventTitleInput" placeholder="Event Title" />
-    
-        <button id="saveButton"> Salvar</button>
-        <button id="cancelButton">Cancelar</button>
-    </div>
-    
-    <div id="deleteEventModal">
-        <h2>Evento</h2>
-    
-        <div id="eventText"></div><br>
-    
-    
-        <button id="deleteButton">Deletar</button>
-        <button id="closeButton">Fechar</button>
-    </div>
-    
-    <div id="modalBackDrop"></div>
-    </main>
     <footer class="footerContainer">
+                
         <div class="content">
             <!--Coluna 1 Footer -->
             <div class="logotipo">
-                <span><img src = "/IMG/InstitutoADcorpo.png" alt = "Logotipo do Instituto Ármen Degurmedjian"></span>
+                <span><img src = "IMG\InstitutoADcorpo.png" alt = "Logotipo do Instituto Ármen Degurmedjian"></span>
             </div>
             <!--Coluna 2 Footer -->
             <div class="colunafooter">
                     <div class="tituloFooter"><i class="fa-solid fa-globe" style="color: #7a7676;"></i>Mapa do Site</div>
                 <ul>
-                     <li><a href="index.html">Home</a></li>
-                     <li><a href="/HTML/tratamentos.html">Tratamentos</a></li> 
-                     <li><a href="/HTML/cursos.html">Cursos</a></li>
-                     <li><a href="/HTML/agenda.html">Agenda</a></li>
-                     <li><a href="/HTML/videos.html">Vídeos</a></li>
-                     <li><a href="/HTML/formulario.html">Cadastro</a></li>               
-                     <li><a href="/HTML/depoimentos.html">Depoimentos</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/HTML/tratamentos.html">Tratamentos</a></li> 
+                    <li><a href="/HTML/cursos.html">Cursos</a></li>
+                    <li><a href="/HTML/agenda.html">Agenda</a></li>
+                    <li><a href="/HTML/videos.html">Vídeos</a></li>
+                    <li><a href="/HTML/formulario.html">Cadastro</a></li>               
+                    <li><a href="/HTML/depoimentos.html">Depoimentos</a></li>
                 </ul>
             </div> 
             <!--Coluna 3 Footer -->        
             <div class="colunafooter">
                 <div class="tituloFooter"><i class="fa-solid fa-share-nodes"
-                     style="color: #7a7676;"></i>Redes Sociais
+                    style="color: #7a7676;"></i>Redes Sociais
                 </div>
-           
+        
                 <ul>
                     <li>
-                        <a href="#https://www.facebook.com/armendegurmendjin"
-                         class = "redesocial"><i class="fa-brands fa-facebook"></i>Facebook</span>
+                        <a href="https://www.facebook.com/armendegur" target="_blank"
+                        class = "redesocial"><i class="fa-brands fa-facebook"></i>Facebook</span>
                         </a>  
                     </li>
                     <li>
-                        <a href="#https://www.youtube.com/channel/UCUqYLaLmMx6YvS5W6kqy9OA"
-                         class = "redesocial"><i class="fa-brands fa-instagram"></i>Instagram</span>
+                        <a href="https://www.instagram.com/armen_degur/#" target="_blank"
+                        class = "redesocial"><i class="fa-brands fa-instagram"></i>Instagram</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#https://www.youtube.com/@oficial8113/about"
-                         class = "redesocial"><i class="fa-brands fa-youtube"></i>YouTube</span>
-                        </a>
+                        <a href="https://www.youtube.com/@oficial8113/about" target="_blank"
+                        class = "redesocial"><i class="fa-brands fa-youtube"></i>YouTube</span>
                     </li>
                 </ul> 
             </div>
+      
             <!--Coluna 4 Footer -->  
             <div class="colunafooter">
                 <div class="tituloFooter">
-                    <i class="fa-solid fa-hand-holding-heart"
-                     style="color: #7a7676;">
+                    <i class="fa-solid fa-message"
+                    style="color: #7a7676;">
                     </i>Atendimentos
                 </div>
-                <p><i class="fa-solid fa-envelope"></i>contato@iad.com.br</p> 
-                <p><i class="fa-solid fa-phone"></i>11.90000-0000</p>
-                <p><i class="fa-brands fa-whatsapp"></i>11.90000-0000</p>
+                
+                    <p><i class="fa-solid fa-envelope"></i>armem279@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>11.90000-0000</p>
+                    <a href="http://api.whatsapp.com/send?1=pt_BR&phone=551196755250" target="_blank" class="whatsapp"><i class="fa-brands fa-whatsapp"></i>11.96755250</p></a>
             </div>
+            <div class="colunafooter">
+                <div class="tituloFooter">
+                <i class="fa-solid fa-location-dot"
+                style="color: #7a7676;">
+                </i>Endereço
+            </div>
+                <div>
+                    <p><i class="fa-sharp fa-solid fa-share"></i>Rua Voluntários da pátria, nº 2128 und 13, Bairro: Santana, cep:02010-800 São Paulo/SP</p>
+                </div>
             <div class="footer_copyrights">
-          
-                <p class="m-b-footer">
-                     GrUpO01 - 2023, todos os direitos reservados.
-                </p> 
-                <p class="by">
-                     Desenvolvido por: Adilson Santos/ Jailma Ferreira/ Renata Carla.
-
-                </p>
-            </div>
-        </div>    
-    </footer>  
-</body>
-</html>
         
+            <p class="m-b-footer">
+                GrUpO01 - 2023, todos os direitos reservados.
+            </p> 
+            <p class="by">
+                Desenvolvido por: Adilson Santos/ Jailma Ferreira/ Renata Carla.
+            </p>
+        </div>
+            
+    </div>
+</body>  
+</html>
