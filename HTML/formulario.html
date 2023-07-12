@@ -14,7 +14,7 @@
     <link rel ="stylesheet" type="text/css"  href="/CSS/formulario.css">
     <link rel="icon" type="image/jpg" sizes="16x16" href="/IMG/novalogo.jpg">
     <!-- Link do arquivo javascript-->
-    <script src="JS\formulario.js" defer></script>
+    <script src="/JS/formulario.js" defer></script>
     <title>Instituto Armem Degumerjian</title>  
 </head>
 <body>
@@ -43,7 +43,14 @@
                     <h1>Cadastre-se Aqui!</h1>
                     <div>
                         <label for="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" class="inputs required">
+                        <input
+                             type="text"
+                             id="nome"
+                             name="nome"
+                             placeholder="Digite seu nome"
+                             class="inputs required"
+                             oninput="validaNome()"
+                        >
                         <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
                     </div>
                     <div>
@@ -53,6 +60,7 @@
                             placeholder="Digite seu e-mail"
                             id="email"
                             name="email"
+                            autocomplete="email"
                             class="inputs required"
                             
                         >
@@ -62,15 +70,15 @@
                     </div>
                     <div>
                         <label
-                            for="celular">Celular
+                            for="telefone">Celular
                         </label>
                         <input
                             type="tel"
                             placeholder="Digite seu telefone"
                             id="telefone"
                             name="telefone"
+                            oninput="validaCel()"
                             class="inputs required"
-                            
                         >
                         <span 
                             class="span-required">Telefone deve ter no mínimo 11 caracteres
@@ -78,10 +86,11 @@
                     </div>
                     <div>
                         <label
-                        for="informacao">Mensagem
+                        for="descricao">Mensagem
                         </label>
                         <br>
                         <textarea
+                            type="text"
                             name="descricao"
                             class="inputs"
                             id="descricao"
@@ -94,34 +103,34 @@
                     <div class="select">
                         <div>
                             <label
-                                for="informacao">Cursos
+                                for="cursos">Cursos
                             </label>
                             <input
                                 type="radio"
-                                id=""
-                                name=""
+                                id="cursos"
+                                name="cursos"
                                 class="inputs required"
                             >
                         </div>
                         <div>
                             <label
-                                for="informacao">Tratamentos
+                                for="tratamentos">Tratamentos
                             </label>
                             <input
                                 type="radio"
-                                name=""
-                                id=""
+                                name="tratamentos"
+                                id="tratamentos"
                                 class="inputs required"
                             >
                         </div>
                         <div>
                             <label
-                                for="informacao">Agenda
+                                for="agenda">Agenda
                             </label>
                             <input
                                 type="radio"
-                                name=""
-                                id=""
+                                name="agenda"
+                                id="agenda"
                                 class="inputs required"
                             >
                         </div>
@@ -138,7 +147,7 @@
         <div class="content">
             <!--Coluna 1 Footer -->
             <div class="logotipo">
-                <span><img src = "IMG\InstitutoADcorpo.png" alt = "Logotipo do Instituto Ármen Degurmedjian"></span>
+                <span><img src = "/IMG/InstitutoADcorpo.png" alt = "Logotipo do Instituto Ármen Degurmedjian"></span>
             </div>
             <!--Coluna 2 Footer -->
             <div class="colunafooter">
