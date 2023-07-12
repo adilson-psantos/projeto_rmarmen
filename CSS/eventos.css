@@ -1,11 +1,16 @@
-header{
+*{
+  box-sizing:content-box;
+  margin: 0;
+  padding: 1;
+  }
+  .header{
     display: flex;
     align-content: center;
     align-items: center;
     justify-content: center;
     position: absolute;
   }
-  header img{
+  header, img{
     display: flex;
     align-content: center;
     align-items: center;
@@ -21,36 +26,22 @@ header{
 }
 
 html{
-
-  --body-color:#FFFCFF ;
-
   --header-color:#0abab5;
-
   --header-button:#92a1d1;
-
   --color-weekdays: #247BA0;
-  
   --box-shadow: #CBD4C2;
-
   --hover: #e8faed;
-
   --current-day:#e8f4fa;
-
   --event-color: #58bae4;
-
   --modal-event: #e8f4fa;
-
-
  --color-day:white;
-  
-
 }
 
 body {
   display: flex;
   margin-top: 10px;
   justify-content: center;
-  background-color: var(--body-color);
+  background-color:#FFFCFF;
 }
 button {
   width: 75px;
