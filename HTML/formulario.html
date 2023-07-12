@@ -43,7 +43,7 @@
                     <h1>Cadastre-se Aqui!</h1>
                     <div>
                         <label for="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" class="inputs required">
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" class="inputs required" autocomplete="email" oninput="nameValidate()">
                         <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
                     </div>
                     <div>
@@ -62,7 +62,7 @@
                     </div>
                     <div>
                         <label
-                            for="celular">Celular
+                            for="telefone">Celular
                         </label>
                         <input
                             type="tel"
@@ -70,7 +70,6 @@
                             id="telefone"
                             name="telefone"
                             class="inputs required"
-                            
                         >
                         <span 
                             class="span-required">Telefone deve ter no mínimo 11 caracteres
@@ -78,10 +77,11 @@
                     </div>
                     <div>
                         <label
-                        for="informacao">Mensagem
+                        for="descricao">Mensagem
                         </label>
                         <br>
                         <textarea
+                            type="text"
                             name="descricao"
                             class="inputs"
                             id="descricao"
@@ -94,34 +94,34 @@
                     <div class="select">
                         <div>
                             <label
-                                for="informacao">Cursos
+                                for="cursos">Cursos
                             </label>
                             <input
                                 type="radio"
-                                id=""
-                                name=""
+                                id="cursos"
+                                name="cursos"
                                 class="inputs required"
                             >
                         </div>
                         <div>
                             <label
-                                for="informacao">Tratamentos
+                                for="tratamentos">Tratamentos
                             </label>
                             <input
                                 type="radio"
-                                name=""
-                                id=""
+                                name="tratamentos"
+                                id="tratamentos"
                                 class="inputs required"
                             >
                         </div>
                         <div>
                             <label
-                                for="informacao">Agenda
+                                for="agenda">Agenda
                             </label>
                             <input
                                 type="radio"
-                                name=""
-                                id=""
+                                name="agenda"
+                                id="agenda"
                                 class="inputs required"
                             >
                         </div>
@@ -189,7 +189,7 @@
             </div>
             <p><i class="fa-solid fa-envelope"></i>armem279@gmail.com</p>
             <p><i class="fa-solid fa-phone"></i>11.90000-0000</p>
-            <a href="http://api.whatsapp.com/send?1=pt_BR&phone=551196755250" target="_blank" class="whatsapp"><i class="fa-brands fa-whatsapp"></i>11.96755250</p> 
+            <a href="http://api.whatsapp.com/send?1=pt_BR&phone=551196755250" target="_blank" class="whatsapp"><i class="fa-brands fa-whatsapp"></i>11.96755250</p></a> 
             
         </div>
         <div class="colunafooter">

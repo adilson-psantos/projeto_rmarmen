@@ -3,18 +3,19 @@ const campos = document.querySelectorAll('.required');
 const spans = document.querySelectorAll('.span-required');
 const emailRegex= /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 
-function validaNome(){
+function nameValidate(){
   if(campos[0].value.length <3)
   {
     console.log('NOME DEVE TER 3 CARACTERES');
   }else{
     console.log('VALIDADO O NOME');
+  
  }
 }
-validaNome()
+nameValidate()
 
 function validaEmail(){
-  if(emailRegex[0].value.length =/^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/)
+  if(emailRegex[0].value =/^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/)
   {
     console.log('DIGITE UM EMAIL VALIDO');
   }else{

@@ -1,16 +1,11 @@
-*{
-  box-sizing:content-box;
-  margin: 0;
-  padding: 1;
-  }
-  .header{
+header{
     display: flex;
     align-content: center;
     align-items: center;
     justify-content: center;
     position: absolute;
   }
-  header, img{
+  header img{
     display: flex;
     align-content: center;
     align-items: center;
@@ -27,22 +22,46 @@
 
 html{
   --header-color:#0abab5;
+
   --header-button:#92a1d1;
+
   --color-weekdays: #247BA0;
   --box-shadow: #CBD4C2;
   --hover: #e8faed;
   --current-day:#e8f4fa;
+
   --event-color: #58bae4;
+
   --modal-event: #e8f4fa;
  --color-day:white;
+  
+
 }
 
 body {
-  display: flex;
-  margin-top: 10px;
+  margin-top: 50px;
   justify-content: center;
   background-color:#FFFCFF;
 }
+#main {
+  display: flex;
+  padding: 1em;
+  padding-top: 50px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 772px;
+  width: 1444px;
+    
+}
+#main nav {
+  height: 482px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-left: 5px;
+  width: 300px;
+  order:-1; 
+}
+
 button {
   width: 75px;
   cursor: pointer;
@@ -66,7 +85,8 @@ button {
   background-color:var(--header-button);
 }
 #container {
-  width: 770px;
+  width: 800px;
+  height: 500px;
 }
 #weekdays {
   width: 100%;

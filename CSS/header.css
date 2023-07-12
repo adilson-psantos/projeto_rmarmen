@@ -11,7 +11,7 @@ header div{
     display: flex;
     margin: 5px;
     padding:5px;
-    width: 300px;
+    width: 105px;
     height: 130px;
     justify-content: center;
     flex-direction: column-reverse;
