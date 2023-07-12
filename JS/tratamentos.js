@@ -1,4 +1,4 @@
-const card = document.getElementsByClassName("card")
-console.log("card")
+let titulo = document.querySelector(".titulo1")
+titulo1.innerText = " Curadora"
 
 
