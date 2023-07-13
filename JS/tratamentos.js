@@ -1,5 +1,5 @@
 let texto = document.getElementById("titulo");
-titulo.innerText = "Energia Fria Vibracional";
+titulo.innerText = "ENERGIA FRIA VIBRACIONAL";
 console.log(titulo);
 
 let descricao = document.querySelector(".texto-simples");
