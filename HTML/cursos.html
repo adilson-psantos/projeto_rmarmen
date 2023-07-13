@@ -10,13 +10,28 @@
     <link rel ="stylesheet" type="text/css" href="/CSS/cursos.css" >
     <link rel="stylesheet"  type="text/css" href="/CSS/sidebar.css">
     <link rel ="stylesheet" type="text/css"  href="/CSS/footer.css">
+    <link href="/css/darkMode.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/switchery/0.8.2/switchery.min.css" />
     <link rel="icon" type="image/jpg" sizes="16x16" href="/IMG/novalogo.jpg">
+    <!--Link do arquivo JavaScript-->
+    <script src="/JS/cursos.js" defer></script>
+    <script src="/JS/darkMode.js" defer></script>
+
     <title>Instituto Armem Degumerjian</title>
 </head>
+
+<!-- dark mode -->
+
+<div class="toggle">
+  <input id="switch" type="checkbox" name="theme">
+  <label for="switch">Toggle</label>
+</div>
+
+<!-- -------- -->
 <body>
   <header>  
     <div>          
-        <img src="/IMG/InstitutoADcorpo.png"  alt="Logotipo do Instituto Ármem Degumerjian"> 
+        <img src="/IMG/InstitutoADcorpo.png"  alt="Logotipo do Instituto Ármem Degumerjian" id="logo"> 
     </div>            
   </header>
   <main>
@@ -54,7 +69,9 @@
           <li>Resolver problemas em ambientes corporativos;</li>   
           <li>Trabalhar a prosperidade na sua vida.</li>  
         </ul><br>
-        <a href="HTML\formulario.html"><button>Faça sua inscrição!</button></a>
+        <a href="/HTML/formulario.html"><button
+          type="submit">Faça sua inscrição   
+     </button></a>
       </div>
     </article>
     <br>
@@ -77,7 +94,9 @@
           <li></li>   
           <li></li>  
         </ul><br>
-        <a href="HTML\formulario.html"><button>Faça sua inscrição!</button></a>
+        <a href="/HTML/formulario.html"><button
+          type="submit">Faça sua inscrição   
+     </button></a>
       </div>
     </article>
   </main>

@@ -27,14 +27,14 @@ const initialColors = {
 const darkMode = {
   bodyColor:'#282a36',
   headerColor: '#000000',
-  headerButton:'#ffffff',
-  backButton: '#363636' ,
+  headerButton:'#000000',
+  backButton: '#000000' ,
   nextButton: '#363636' ,
   colorWeekdays: '#ffffff' ,
   currentDay: '#f8f8f2',
   eventColor: '#6272a4',
   colorDay: '#44475a',
-  modalEvent: '#6272a4'
+  modalEvent: '#6272a4',
   
 }
 
@@ -77,8 +77,9 @@ checkbox.addEventListener("change", ({target}) => {
     body.className = theme;
 
     //Color Header
-    var header = document.getElementsByTagName("header")[0];
+    var header = document.getElementsByTagName("header")[1];
     header.style.backgroundColor = (theme == "dark" ? "#000000" :  "#ffffff");
+    header.style.color  = (theme == "dark" ? "#000000" :  "#ffffff");
 
     //Color Footer
     var footer = document.getElementsByClassName("footerContainer")[0];
@@ -103,7 +104,7 @@ checkbox.addEventListener("change", ({target}) => {
 
     var fontcopyrights = document.getElementsByClassName("footerContainer")[0].getElementsByClassName("footer_copyrights")[0].getElementsByTagName("p")
     for (var i = 0; i < fontcopyrights.length; i++) {
-        fontcopyrights[i].style.color = "#7a7676";
+        fontcopyrights[i].style.color = (theme == "dark" ? "#ffffff" : "#7a7676");
     }
 
 

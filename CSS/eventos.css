@@ -68,15 +68,6 @@
 html{
     --header-color:#0abab5;
     --header-button:#0abab5;
-<<<<<<< HEAD
-    --color-weekdays: #247BA0;
-    --box-shadow: #0abab5;
-    --hover: #0abab5;
-    --current-day:#0abab5;
-    --event-color: #0abab5;
-    --modal-event: #0abab5;
-    --color-day:white;
-=======
     --color-weekdays: #363636;
     --box-shadow: #CBD4C2;
     --hover: #e8faed;
@@ -87,7 +78,6 @@ html{
     --color-day:white;
     
   
->>>>>>> f3b5d503635b92cb22d41471763e1638564fb0ca
   }
   
   body {
@@ -95,6 +85,7 @@ html{
     justify-content: center;
     background-color:#FFFCFF;
   }
+  
   #main {
     display: flex;
     padding: 1em;
@@ -113,7 +104,7 @@ html{
     order:-1; 
   }
 
-  button {
+   button {
     width: 75px;
     cursor: pointer;
     box-shadow: 0px 0px 2px #0abab5;
@@ -134,6 +125,7 @@ html{
   }
   #header button {
     background-color:var(--header-button);
+    
   }
   #container {
     width: 800px;
@@ -142,6 +134,7 @@ html{
   }
   #monthDisplay{
     text-transform: uppercase;
+    color: #7a7676;
   }
   #weekdays {
     width: 100%;

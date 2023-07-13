@@ -9,7 +9,8 @@
     float:right; 
     width:100%;
     margin:0 5%;
-    padding: 7em 0
+    padding: 7em 0;
+    
 }
 
 .content{
@@ -17,7 +18,7 @@
   width: 100%;
   margin: 0 1%;
   padding: 20px 0px;
-
+  
 }
 .logotipo { 
     float:left;
@@ -35,10 +36,12 @@
     padding-bottom: 10%;
     float:left; 
     margin-bottom:2em;
+    
 }
 .colunafooter ul { 
     width:100%;
     float:left;
+    
 }
 .colunafooter ul li { 
     padding:0.3em 0em;
@@ -51,6 +54,7 @@
 }
 .colunafooter ul li a p{
     font-size:0.5em;
+    
 }
 .colunafooter p {
   color: #7a7676;
@@ -128,7 +132,7 @@ p {
 }
 .footer_copyrights {
   background-color:#f4f4f4;
-  width:106%;
+  width:100%;
   float:left;
   text-align:center;
   padding:1.5em 0em;
