@@ -10,6 +10,7 @@
     <!--Link do fontawsome-->
     <script src="https://kit.fontawesome.com/7694110e97.js" crossorigin="anonymous"></script>
     <!--Link do arquivo CSS-->
+    <link href="/css/darkMode.css" rel="stylesheet">
     <!--<link rel ="stylesheet" type="text/css" href="/CSS/style.css" > -->
     <link rel="stylesheet"  type="text/css" href="/CSS/sidebar.css">
     <link rel="stylesheet" href="/CSS/header.css">
@@ -18,10 +19,17 @@
     <link rel="stylesheet" href="/CSS/tratamentos.css">
     <link rel="icon" type="image/jpg" sizes="16x16" href="/IMG/novalogo.jpg">
     <!-- Link do arquivo javascript-->
-    <script src="/JS/tratamentos.js" defer></script>
+    <script src="/JS/eventos.js" defer></script>
+    <script src="/JS/darkMode.js" defer></script>
     
     <title>Instituto Armem Degumerjian</title>
 </head>
+<!-- dark mode -->
+<div class="toggle">
+    <input id="switch" type="checkbox" name="theme">
+    <label for="switch">Toggle</label>
+</div>
+<!-- -------- -->
 <body>
   <header>  
     <div>   
@@ -55,16 +63,16 @@
      <!--Segundo Card-->           
     <article class="card">
         <img src="/IMG/radiestesia-magnetica_imantada.PNG" alt="radiestesia-magnetica_imantada_1"width="250" height="200">
-        <h1 id="titulo-2"> Radiestesia Magnética Imantada</h1>
-        <p class="texto-simples-2">Utiliza o pêndulo de cristal ou pedra como principal instrumento radiestésico, pois este emana uma Frequência de ondas magnéticas e gravitacional de forma espiral ou em linha reta desenhando formas holográficas e geométricas em volta da pessoa, objeto ou local a ser trabalhado. 
+        <h1 id="titulo1"> Radiestesia Magnética Imantada</h1>
+        <p class="texto-simples1">Utiliza o pêndulo de cristal ou pedra como principal instrumento radiestésico, pois este emana uma Frequência de ondas magnéticas e gravitacional de forma espiral ou em linha reta desenhando formas holográficas e geométricas em volta da pessoa, objeto ou local a ser trabalhado. 
         </p><br>
         <a href="Atendimento">Saiba Mais</a>                 
       </article> 
        <!--Terceiro Card--> 
        <article class="card">
             <img src="/IMG/RMA.PNG" alt="Registro da Memória Celular"width="250" height="200">
-            <h1 id="titulo-3">RMA - Registro da Memória Celular</h1>           
-            <p id="texto-simples-3">As células são responsáveis por toda nossa formação física, emocional e cerebral. Quando o espermatozoide atinge o óvulo na nossa concepção, o núcleo da célula se forma com todas as informações ancestrais (DNA). 
+            <h1 id="titulo2">RMA - Registro da Memória Celular</h1>           
+            <p id="texto-simples2">As células são responsáveis por toda nossa formação física, emocional e cerebral. Quando o espermatozoide atinge o óvulo na nossa concepção, o núcleo da célula se forma com todas as informações ancestrais (DNA). 
             </p><br>
         <a href="Atendimento">Saiba Mais</a> 
         </article>                     

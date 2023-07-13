@@ -98,6 +98,7 @@ nav {
 
 .card.text p {
   transition: 0.5s;
+  color: white;
 }
 
 .card.text a {
@@ -117,4 +118,8 @@ nav {
   margin-top: -30px;
   box-shadow: 2px 20px 25px #0abab5;
   border-color: #0abab5;
+}
+
+.card p:hover{
+  color: #fff;
 }
