@@ -24,7 +24,6 @@ header img {
   padding: 5px;
   align-items: center;
   flex-direction: row;
- 
 }
 
 header,
@@ -34,10 +33,10 @@ nav {
   padding: 1em 0;
 }
 
-header {
+/* header {
   background: #ffffff;
   height: 20vh;
-}
+} */
 
 header,
 footer,
@@ -45,7 +44,6 @@ article,
 nav {
   padding: 1em 0;
 }
-
 main {
   display: flex;
   padding: 15px;
