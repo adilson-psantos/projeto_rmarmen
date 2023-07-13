@@ -1,43 +1,74 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Links do Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!--Link do fontawsome-->
     <script src="https://kit.fontawesome.com/7694110e97.js" crossorigin="anonymous"></script>
     <!--Link do arquivo CSS-->
-    <link rel="stylesheet" type="text/css" href="/CSS/style.css" >
-    <link rel="stylesheet"  type="text/css" href="/CSS/sidebar.css">
+
+    <link href="/css/darkMode.css" rel="stylesheet">
+    <!--<link rel ="stylesheet" type="text/css" href="/CSS/style.css" > -->
+    <link rel="stylesheet" type="text/css" href="/CSS/sidebar.css">
+    <!-- <link rel="stylesheet" href="/CSS/header.css"> -->
     <link rel="stylesheet" type="text/css" href="/CSS/footer.css">
-    <link rel="stylesheet"  type="text/css" href="/CSS/header.css">
-    <link rel="icon" type="image/jpg" sizes="16x16" href="/IMG/novalogo.jpg">
+    <link rel="stylesheet" href="fonts-icones.css">
     <link rel="stylesheet" href="/CSS/eventos.css">
+    <link rel="icon" type="image/jpg" sizes="16x16" href="/IMG/novalogo.jpg">
+
+
+
     <!-- Link do arquivo javascript-->
     <script src="/JS/eventos.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/switchery/0.8.2/switchery.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/switchery/0.8.2/switchery.min.js"></script>
+
     <title>Instituto Armem Degumerjian</title>
 </head>
+
+<!-- dark mode -->
+
+<div class="toggle">
+    <input id="switch" type="checkbox" name="theme">
+    <label for="switch">Toggle</label>
+</div>
+
+<!-- -------- -->
+
+
 <body>
-    <header> 
-        <div>          
-         <img src="/IMG/novalogo.jpg"  alt="Logotipo do Instituto Ármem Degumerjian"> 
-        </div>    
+    <header>
+        <div>
+            <img src="/IMG/novalogo.jpg" alt="Logotipo do Instituto Ármem Degumerjian">
+        </div>
+
+
     </header>
-    <div id="main">
+    <main>
+        <!--Menu -->
         <nav>
             <section>
                 <div class="sidebar">
-                    <a href="index.html">Home</a>
+                    <a href="/index.html">Home</a>
                     <a href="/HTML/tratamentos.html">Tratamentos</a>
                     <a href="/HTML/cursos.html">Cursos</a>
                     <a href="/HTML/eventos.html">Eventos</a>
                     <a href="/HTML/videos.html">Vídeos</a>
-                    <a href="/HTML/formulario.html">Cadastro</a>               
+                    <a href="/HTML/formulario.html">Cadastro</a>
                     <a href="/HTML/depoimentos.html">Depoimentos</a>
                 </div>
             </section>
-        </nav>    
-        
+        </nav>
+
+
+
+        <!-- Body -->
         <div id="container">
             <div id="topo">
                 <div id="monthDisplay"></div>
@@ -47,18 +78,18 @@
                     <button id="nextButton">Próximo</button>
                 </div>
             </div>
-        
+
 
             <div id="weekdays">
-                    <div>Domingo</div>
-                    <div>Segunda-feira</div>
-                    <div>Terça-feira</div>
-                    <div>Quarta-feira</div>
-                    <div>Quinta-feira</div>
-                    <div>Sexta-feira</div>
-                    <div>Sábado</div>
+                <div>Domingo</div>
+                <div>Segunda-feira</div>
+                <div>Terça-feira</div>
+                <div>Quarta-feira</div>
+                <div>Quinta-feira</div>
+                <div>Sexta-feira</div>
+                <div>Sábado</div>
             </div>
-            
+
             <!-- div dinamic -->
             <div id="calendar"></div>
 
@@ -75,89 +106,86 @@
                 <h2>Evento</h2>
 
                 <div id="eventText"></div>
-                <br>    
-                    <button id="deleteButton">Deletar</button>
-                    <button id="closeButton">Fechar</button>
-                </div>
+                <br>
+                <button id="deleteButton">Deletar</button>
+                <button id="closeButton">Fechar</button>
+            </div>
 
-                <div id="modalBackDrop"></div>
+            <div id="modalBackDrop"></div>
         </div>
-    </div>
+    </main>
     <footer class="footerContainer">
-                
+
         <div class="content">
             <!--Coluna 1 Footer -->
             <div class="logotipo">
-                <span><img src = "IMG\InstitutoADcorpo.png" alt = "Logotipo do Instituto Ármen Degurmedjian"></span>
+                <span><img src="/IMG/InstitutoADcorpo.png" alt="Logotipo do Instituto Ármen Degurmedjian"></span>
             </div>
             <!--Coluna 2 Footer -->
             <div class="colunafooter">
-                    <div class="tituloFooter"><i class="fa-solid fa-globe" style="color: #7a7676;"></i>Mapa do Site</div>
+                <div class="tituloFooter">
+                    <p><i class="fa-solid fa-globe" style="color: #7a7676;"></i>Mapa do Site</p>
+                </div>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="/HTML/tratamentos.html">Tratamentos</a></li> 
+                    <li><a href="/HTML/tratamentos.html">Tratamentos</a></li>
                     <li><a href="/HTML/cursos.html">Cursos</a></li>
-                    <li><a href="/HTML/agenda.html">Agenda</a></li>
+                    <li><a href="/HTML/eventos.html">Eventos</a></li>
                     <li><a href="/HTML/videos.html">Vídeos</a></li>
-                    <li><a href="/HTML/formulario.html">Cadastro</a></li>               
+                    <li><a href="/HTML/formulario.html">Cadastro</a></li>
                     <li><a href="/HTML/depoimentos.html">Depoimentos</a></li>
                 </ul>
-            </div> 
-            <!--Coluna 3 Footer -->        
+            </div>
+            <!--Coluna 3 Footer -->
             <div class="colunafooter">
-                <div class="tituloFooter"><i class="fa-solid fa-share-nodes"
-                    style="color: #7a7676;"></i>Redes Sociais
+                <div class="tituloFooter">
+                    <p><i class="fa-solid fa-share-nodes" style="color: #7a7676;"></i>Redes Sociais</p>
                 </div>
-        
+
                 <ul>
                     <li>
-                        <a href="https://www.facebook.com/armendegur" target="_blank"
-                        class = "redesocial"><i class="fa-brands fa-facebook"></i>Facebook</span>
-                        </a>  
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/armen_degur/#" target="_blank"
-                        class = "redesocial"><i class="fa-brands fa-instagram"></i>Instagram</span>
+                        <a href="#https://www.facebook.com/armendegurmendjin" class="redesocial"><i
+                                class="fa-brands fa-facebook"></i>Facebook</span>
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.youtube.com/@oficial8113/about" target="_blank"
-                        class = "redesocial"><i class="fa-brands fa-youtube"></i>YouTube</span>
+                        <a href="#https://www.youtube.com/channel/UCUqYLaLmMx6YvS5W6kqy9OA" class="redesocial"><i
+                                class="fa-brands fa-instagram"></i>Instagram</span>
+                        </a>
                     </li>
-                </ul> 
+                    <li>
+                        <a href="#https://www.youtube.com/@oficial8113/about" class="redesocial"><i
+                                class="fa-brands fa-youtube"></i>YouTube</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-      
-            <!--Coluna 4 Footer -->  
+            <!--Coluna 4 Footer -->
             <div class="colunafooter">
                 <div class="tituloFooter">
-                    <i class="fa-solid fa-message"
-                    style="color: #7a7676;">
-                    </i>Atendimentos
+                    <p><i class="fa-solid fa-hand-holding-heart" style="color: #7a7676;">
+                        </i>Atendimentos</p>
                 </div>
-                
-                    <p><i class="fa-solid fa-envelope"></i>armem279@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i>11.90000-0000</p>
-                    <a href="http://api.whatsapp.com/send?1=pt_BR&phone=551196755250" target="_blank" class="whatsapp"><i class="fa-brands fa-whatsapp"></i>11.96755250</p></a>
+
+                <p><i class="fa-solid fa-envelope"></i>contato@iad.com.br</p>
+                <p><i class="fa-solid fa-phone"></i>11.90000-0000</p>
+                <p><i class="fa-brands fa-whatsapp"></i>11.90000-0000</p>
             </div>
-            <div class="colunafooter">
-                <div class="tituloFooter">
-                <i class="fa-solid fa-location-dot"
-                style="color: #7a7676;">
-                </i>Endereço
-            </div>
-                <div>
-                    <p><i class="fa-sharp fa-solid fa-share"></i>Rua Voluntários da pátria, nº 2128 und 13, Bairro: Santana, cep:02010-800 São Paulo/SP</p>
-                </div>
             <div class="footer_copyrights">
-        
-            <p class="m-b-footer">
-                GrUpO01 - 2023, todos os direitos reservados.
-            </p> 
-            <p class="by">
-                Desenvolvido por: Adilson Santos/ Jailma Ferreira/ Renata Carla.
-            </p>
+
+                <p class="m-b-footer">
+                    GrUpO01 - 2023, todos os direitos reservados.
+                </p>
+                <p class="by">
+                    Desenvolvido por: Adilson Santos/ Jailma Ferreira/ Renata Carla.
+
+                </p>
+            </div>
+
         </div>
-            
-    </div>
-</body>  
+    </footer>
+
+    <script src="/js/darkMode.js"></script>
+</body>
+
 </html>

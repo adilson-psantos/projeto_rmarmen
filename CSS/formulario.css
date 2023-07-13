@@ -3,6 +3,7 @@
   --color-blue:#0abab5;
   --color-grey:#7f7c82;
   --color-red:#e63636;
+  --color-black:#000000;
 }
 *{
   margin: 0;
@@ -56,6 +57,9 @@ nav {
       
   }
   .span-required{
+    font-size: 12px;
+    margin:3px 0 0 1px;
+    color:var(--color-red);
     display: none;
   }
   .inputs{

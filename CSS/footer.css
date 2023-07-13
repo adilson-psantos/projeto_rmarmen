@@ -157,4 +157,9 @@ p {
   text-decoration:underline;
   transition:0.2s;
 }
-
+@media screen and (max-width: 576px) {
+  .colunafooter{
+    flex-direction:column;
+    gap:5px;
+  }
+}
