@@ -24,6 +24,7 @@ header img {
   padding: 5px;
   align-items: center;
   flex-direction: row;
+ 
 }
 
 header,
@@ -86,19 +87,24 @@ nav {
   align-items: center;
   justify-content: center;
 }
-.card.text h1 {
-  font-size: 2rem;
-  color: #ffffff;
+
+.card img{
+  border-radius: 50% ;
 }
 
-.card.text {
+.card.text{
   padding: 20px;
   text-align: center;
 }
 
+card.text h1 {
+  font-size: 2rem;
+  color: #7a7676;
+}
+
 .card.text p {
   transition: 0.5s;
-  color: white;
+  color: #7a7676;
 }
 
 .card.text a {
@@ -120,6 +126,10 @@ nav {
   border-color: #0abab5;
 }
 
+.card h1 :hover {
+  color: #fff;
+}
+ 
 .card p:hover{
   color: #fff;
 }
