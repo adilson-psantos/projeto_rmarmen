@@ -64,10 +64,6 @@
     order: -1;
   }
 
-
-
-
-
 /*Body*/
 html{
     --header-color:#0abab5;
@@ -89,6 +85,7 @@ html{
     justify-content: center;
     background-color:#FFFCFF;
   }
+  
   #main {
     display: flex;
     padding: 1em;
@@ -108,9 +105,7 @@ html{
     order:-1; 
   }
 
-
-
-  button {
+   button {
     width: 75px;
     cursor: pointer;
     box-shadow: 0px 0px 2px gray;
@@ -131,6 +126,7 @@ html{
   }
   #header button {
     background-color:var(--header-button);
+    
   }
   #container {
     width: 800px;
@@ -139,6 +135,7 @@ html{
   }
   #monthDisplay{
     text-transform: uppercase;
+    color: #7a7676;
   }
   #weekdays {
     width: 100%;

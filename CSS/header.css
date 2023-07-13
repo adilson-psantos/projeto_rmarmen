@@ -1,7 +1,7 @@
 header div{
     display: flex;
-    width: 366px;
-    height: 150px;
+    width: 992px;
+    height: 256px;
     align-content: center;
     align-items: center;
     
@@ -11,8 +11,8 @@ header div{
     display: flex;
     margin: 5px;
     padding:5px;
-    width: 105px;
-    height: 130px;
+    width: 503px;
+    height: 214px;
     justify-content: center;
     flex-direction: column-reverse;
   }  
