@@ -3,7 +3,12 @@ const campos = document.querySelectorAll('.required');
 const spans = document.querySelectorAll('.span-required');
 const emailRegex= /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 
-form.addEventListener('submit')
+form.addEventListener('submit' , (e) => {
+  e.preventDefault();
+  validaNome();
+  validaEmail();
+  validaCel();
+});
 
 function mostraErro(formulario){
   campos[formulario].style.border='2px solid #e63636';
