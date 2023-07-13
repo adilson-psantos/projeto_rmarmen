@@ -3,6 +3,7 @@ const campos = document.querySelectorAll('.required');
 const spans = document.querySelectorAll('.span-required');
 const emailRegex= /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 
+form.addEventListener('submit')
 
 function mostraErro(formulario){
   campos[formulario].style.border='2px solid #e63636';
@@ -19,30 +20,30 @@ function removeErro(formulario){
 function validaNome(){
   if(campos[0].value.length <3)
   {
-    mostraErro([0])
+    mostraErro(0)
   }else{
-    removeErro[0]
+    removeErro(0)
   
  }
 }
 validaNome()
 
 function validaEmail(){
-  if(campos[1].value .length =/^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/)
+  if(!emailRegex.test(campos[1].value))
   {
-    console.log('DIGITE UM EMAIL VALIDO');
+    mostraErro(1)
   }else{
-    console.log('VALIDADO O NOME');
+    removeErro(1)
  }
 }
 validaEmail()
 
 function validaCel(){
-  if(campos[2].value .length <11)
-  {
-    console.log('DIGITE UM TELEFONE VÁLIDO');
+  if(campos[2].value .length <11) 
+ {
+    mostraErro(2)
   }else{
-    console.log('TELEFONE VALIDADO');
+    removeErro(2)
  }
 }
 validaCel()

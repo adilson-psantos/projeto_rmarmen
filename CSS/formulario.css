@@ -59,7 +59,7 @@ nav {
   .span-required{
     font-size: 12px;
     margin:3px 0 0 1px;
-    color:var(--color-red);
+    color:var(--color-black);
     display: none;
   }
   .inputs{
