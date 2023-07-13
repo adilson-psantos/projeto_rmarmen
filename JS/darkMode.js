@@ -104,7 +104,7 @@ checkbox.addEventListener("change", ({target}) => {
 
     var fontcopyrights = document.getElementsByClassName("footerContainer")[0].getElementsByClassName("footer_copyrights")[0].getElementsByTagName("p")
     for (var i = 0; i < fontcopyrights.length; i++) {
-        fontcopyrights[i].style.color = (theme == "dark" ? "#000000" : "#7a7676");
+        fontcopyrights[i].style.color = (theme == "dark" ? "#ffffff" : "#7a7676");
     }
 
 
