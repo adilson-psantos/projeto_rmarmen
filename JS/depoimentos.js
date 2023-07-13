@@ -9,6 +9,3 @@ function lampOff() {
 }
 
 
-
-lamp.addEventListener('mouseover', lampOn)
-lamp.addEventListener('mouseleave', lampOff)
