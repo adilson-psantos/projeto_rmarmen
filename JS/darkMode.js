@@ -12,6 +12,8 @@ const initialColors = {
   headerColor: getStyle(html, '--header-color'),
   headerButton: getStyle(html, '--header-button'),
   colorWeekdays: getStyle(html, '--color-weekdays'),
+  backButton: getStyle(html, '--button-color'),
+  nextButton: getStyle(html, '--button-color'),
   currentDay: getStyle(html, '--current-day'),
   eventColor: getStyle(html, '--event-color'),
   eventColor: getStyle(html, '--event-color'),
@@ -24,9 +26,11 @@ const initialColors = {
 
 const darkMode = {
   bodyColor:'#282a36',
-  headerColor: '#ff5555',
-  headerButton:'#bd93f9',
-  colorWeekdays: '#6272a4' ,
+  headerColor: '#000000',
+  headerButton:'#ffffff',
+  backButton: '#363636' ,
+  nextButton: '#363636' ,
+  colorWeekdays: '#ffffff' ,
   currentDay: '#f8f8f2',
   eventColor: '#6272a4',
   colorDay: '#44475a',
@@ -74,11 +78,11 @@ checkbox.addEventListener("change", ({target}) => {
 
     //Color Header
     var header = document.getElementsByTagName("header")[0];
-    header.style.backgroundColor = (theme == "dark" ? "#44475a" :  "#ffffff");
+    header.style.backgroundColor = (theme == "dark" ? "#000000" :  "#ffffff");
 
     //Color Footer
     var footer = document.getElementsByClassName("footerContainer")[0];
-    footer.style.backgroundColor = (theme == "dark" ? "#44475a" :  "#ffffff");
+    footer.style.backgroundColor = (theme == "dark" ? "#000000" :  "#ffffff");
 
     var elemntIFooter = document.getElementsByClassName("footerContainer")[0].getElementsByTagName("i")
     for (var i = 0; i < elemntIFooter.length; i++) {

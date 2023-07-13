@@ -68,6 +68,7 @@
 html{
     --header-color:#0abab5;
     --header-button:#0abab5;
+<<<<<<< HEAD
     --color-weekdays: #247BA0;
     --box-shadow: #0abab5;
     --hover: #0abab5;
@@ -75,6 +76,18 @@ html{
     --event-color: #0abab5;
     --modal-event: #0abab5;
     --color-day:white;
+=======
+    --color-weekdays: #363636;
+    --box-shadow: #CBD4C2;
+    --hover: #e8faed;
+    --current-day:#d0fcfd;
+    --button-color:#0abab5
+    --event-color: #58bae4;
+    --modal-event: #e8f4fa;
+    --color-day:white;
+    
+  
+>>>>>>> f3b5d503635b92cb22d41471763e1638564fb0ca
   }
   
   body {
@@ -126,6 +139,9 @@ html{
     width: 800px;
     height: 500px;
     margin-left: 14%;
+  }
+  #monthDisplay{
+    text-transform: uppercase;
   }
   #weekdays {
     width: 100%;
