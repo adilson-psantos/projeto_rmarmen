@@ -1,41 +1,34 @@
 const html = document.querySelector('html')
 const checkbox = document.querySelector("input[name=theme]")
-
 const getStyle = (element, style) => 
     window
         .getComputedStyle(element)
         .getPropertyValue(style)
 
-
 const initialColors = {
-  bodyColor: getStyle(html, '--body-color'),
-  headerColor: getStyle(html, '--header-color'),
-  headerButton: getStyle(html, '--header-button'),
-  colorWeekdays: getStyle(html, '--color-weekdays'),
-  backButton: getStyle(html, '--button-color'),
-  nextButton: getStyle(html, '--button-color'),
-  currentDay: getStyle(html, '--current-day'),
-  eventColor: getStyle(html, '--event-color'),
-  eventColor: getStyle(html, '--event-color'),
-  colorDay: getStyle(html, '--color-day'),
-  modalEvent: getStyle(html, '--modal-event')
-  
-
-  
+    bodyColor: getStyle(html, '--body-color'),
+    headerColor: getStyle(html, '--header-color'),
+    headerButton: getStyle(html, '--header-button'),
+    colorWeekdays: getStyle(html, '--color-weekdays'),
+    backButton: getStyle(html, '--button-color'),
+    nextButton: getStyle(html, '--button-color'),
+    currentDay: getStyle(html, '--current-day'),
+    eventColor: getStyle(html, '--event-color'),
+    eventColor: getStyle(html, '--event-color'),
+    colorDay: getStyle(html, '--color-day'),
+    modalEvent: getStyle(html, '--modal-event')
 }
 
 const darkMode = {
-  bodyColor:'#282a36',
-  headerColor: '#000000',
-  headerButton:'#000000',
-  backButton: '#000000' ,
-  nextButton: '#363636' ,
-  colorWeekdays: '#ffffff' ,
-  currentDay: '#f8f8f2',
-  eventColor: '#6272a4',
-  colorDay: '#44475a',
-  modalEvent: '#6272a4',
-  
+    bodyColor:'#282a36',
+    headerColor: '#000000',
+    headerButton:'#ffffff',
+    backButton: '#363636' ,
+    nextButton: '#363636' ,
+    colorWeekdays: '#ffffff' ,
+    currentDay: '#f8f8f2',
+    eventColor: '#6272a4',
+    colorDay: '#44475a'
 }
 
 const transformKey = key => 
@@ -58,9 +51,6 @@ checkbox.addEventListener("change", ({target}) => {
 
     var theme = target.checked ? "dark" : "light"
     
-
-    
-
     //Color background Nav
     document.getElementsByClassName("sidebar")[0].style.backgroundColor = (theme == "dark" ? "#44475a" :  "#ffffff")
     
@@ -77,7 +67,7 @@ checkbox.addEventListener("change", ({target}) => {
     body.className = theme;
 
     //Color Header
-    var header = document.getElementsByTagName("header")[1];
+    var header = document.getElementsByTagName("header")[0];
     header.style.backgroundColor = (theme == "dark" ? "#000000" :  "#ffffff");
     header.style.color  = (theme == "dark" ? "#000000" :  "#ffffff");
 
@@ -97,18 +87,16 @@ checkbox.addEventListener("change", ({target}) => {
 
     var elementPFooter = document.getElementsByClassName("footerContainer")[0].getElementsByTagName("p")
     for (var i = 0; i < elementPFooter.length; i++) {
-        elementPFooter[i].style.color = (theme == "dark" ? "#ffffff" : "#7a7676");
+        elementPFooter[i].style.color = (theme == "dark" ? "#7a7676" :"#ffffff" );
     }
 
 
 
     var fontcopyrights = document.getElementsByClassName("footerContainer")[0].getElementsByClassName("footer_copyrights")[0].getElementsByTagName("p")
     for (var i = 0; i < fontcopyrights.length; i++) {
-        fontcopyrights[i].style.color = (theme == "dark" ? "#ffffff" : "#7a7676");
+        fontcopyrights[i].style.color = (theme == "dark" ? "#ffffff" : "#747676");
+        
     }
-
-
-
 })
 
 // function changeTheme() {
