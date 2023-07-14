@@ -1,4 +1,5 @@
 
+
 // variaveis globais
 
 let nav = 0
