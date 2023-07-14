@@ -1,282 +1,274 @@
 * {
-    box-sizing: content-box;
-    margin: 0;
-    padding: 1;
-  }
-  
-  /* body */
-  body {
-    background-color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #7a7676;
-  }
-  
-  header div {
-    display: flex;
-    width: 100%;
-    height: 145%;
-    justify-content: center;
-  }
-  
-  header img {
-    display: flex;
-    margin: 5px;
-    padding: 5px;
-    align-items: center;
-    flex-direction: row;
-  }
-  
-  header,
-  footer,
-  article,
-  nav {
-    padding: 1em 0;
-  }
-  
-  /* header {
-    background: #ffffff;
-    height: 20vh;
-  } */
-  
-  header,
-  footer,
-  article,
-  nav {
-    padding: 1em 0;
-  }
-  
-  main {
-    display: flex;
-    padding: 15px;
-    padding-top: 75px;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    /* align-items: center; */
-    height: 785px;
-  }
-  nav {
-    height: 482px;
-    padding-top: 15px;
-    padding-bottom: 10px;
-    margin-top: 1px;
-    width: 300px;
-    order: -1;
-  }
+  box-sizing: content-box;
+  margin: 0;
+  padding: 1;
+}
 
+/* body */
+body {
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #7a7676;
+}
+
+header div {
+  display: flex;
+  width: 100%;
+  height: 145%;
+  justify-content: center;
+}
+
+header img {
+  display: flex;
+  margin: 5px;
+  padding: 5px;
+  align-items: center;
+  flex-direction: row;
+}
+
+header,
+footer,
+article,
+nav {
+  padding: 1em 0;
+}
+
+/* header {
+  background: #ffffff;
+  height: 20vh;
+} */
+
+header,
+footer,
+article,
+nav {
+  padding: 1em 0;
+}
+
+main {
+  display: flex;
+  padding: 15px;
+  padding-top: 75px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  /* align-items: center; */
+  height: 785px;
+}
+nav {
+  height: 482px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-top: 1px;
+  width: 300px;
+  order: -1;
+}
 /*Body*/
 html{
-    --header-color:#0abab5;
-    --header-button:#0abab5;
-    --color-weekdays: #363636;
-    --box-shadow: #CBD4C2;
-    --hover: #e8faed;
-    --current-day:#d0fcfd;
-    --button-color:#0abab5
-    --event-color: #58bae4;
-    --modal-event: #e8f4fa;
-    --color-day:white;
-    
-  
-  }
-  
-  body {
-    margin-top: 50px;
-    justify-content: center;
-    background-color:#FFFCFF;
-  }
-  
-  #main {
-    display: flex;
-    padding: 1em;
-    padding-top: 50px;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    height: 772px;
-    width: 1444px;
-  }
-  #main nav {
-    height: 482px;
-    padding-top: 15px;
-    padding-bottom: 10px;
-    margin-left: 5px;
-    width: 300px;
-    order:-1; 
-  }
+  --header-color:#0abab5;
+  --header-button:#0abab5;
+  --color-weekdays: #363636;
+  --box-shadow: #CBD4C2;
+  --hover: #e8faed;
+  --current-day:#d0fcfd;
+  --button-color:#0abab5
+  --event-color: #58bae4;
+  --modal-event: #e8f4fa;
+  --color-day:white;
+}
 
-   button {
-    width: 75px;
-    cursor: pointer;
-    box-shadow: 0px 0px 2px #0abab5;
-    border: none;
-    outline: none;
-    padding: 5px;
-    border-radius: 5px;
-    color: white;
-  }
-  
-  #header {
-    padding: 10px;
-    color: var(--header-color) ;
-    font-size: 26px;
-    font-family: sans-serif;
-    display: flex;
-    justify-content: space-between;
-  }
-  #header button {
-    background-color:var(--header-button);
+body {
+  margin-top: 50px;
+  justify-content: center;
+  background-color:#FFFCFF;
+}
+#main {
+  display: flex;
+  padding: 1em;
+  padding-top: 50px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 772px;
+  width: 1444px;
     
-  }
-  #container {
-    width: 800px;
-    height: 500px;
-    margin-left: 14%;
-  }
-  #monthDisplay{
-    text-transform: uppercase;
-    color: #7a7676;
-  }
-  #weekdays {
-    width: 100%;
-    display: flex;
-    color: var(--color-weekdays) ;
-  }
-  #weekdays div {
-    width: 100px;
-    padding: 10px;
-  }
-  #calendar {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .day {
-    width: 100px;
-    padding: 10px;
-    height: 100px;
-    cursor: pointer;
-    box-sizing: border-box;
-    background-color: var(--color-day);
-    margin: 5px;
-    box-shadow: 0px 0px 3px var(--box-shadow);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-radius: 15%;
-  }
-  .day:hover {
-    background-color: var(--hover);
-  }
-  
-  .day + #currentDay {
-    background-color:var(--current-day);
-  }
-  .event {
-    font-size: 10px;
-    padding: 3px;
-    background-color: var(--event-color);
-    color: white;
-    border-radius: 5px;
-    max-height: 55px;
-    overflow: hidden;
-  }
-  .padding {
-    cursor: default !important;
-    background-color: var(--body-color) !important;
-    box-shadow: none !important;
-  }
-  #newEventModal, #deleteEventModal {
-    display: none;
-    z-index: 20;
-    padding: 25px;
-    background-color: var(--modal-event);
-    box-shadow: 0px 0px 3px black;
-    border-radius: 5px;
-    width: 350px;
-    top: 100px;
-    left: calc(50% - 175px);
-    position: absolute;
-    font-family: sans-serif;
-  }
-  #eventTitleInput {
-    padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    margin-bottom: 25px;
-    border-radius: 3px;
-    outline: none;
-    border: none;
-    box-shadow: 0px 0px 3px gray;
-  }
-  #eventTitleInput.error {
-    border: 2px solid red;
-  }
-  #cancelButton, #deleteButton {
-    background-color: var(--header-color);
-  }
-  #saveButton, #closeButton {
-    background-color: var(--header-button);
-  }
-  #eventText {
-    font-size: 14px;
-  }
-  #modalBackDrop {
-    display: none;
-    top: 0px;
-    left: 0px;
-    z-index: 10;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    background-color: rgba(0,0,0,0.8);
-  }
+}
+#main nav {
+  height: 482px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-left: 5px;
+  width: 300px;
+  order:-1; 
+}
+button {
+  width: 75px;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px gray;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}
 
-  .theme-switch {
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-  }
-  
-  .theme-switch input[type="radio"] {
-    display: none;
-  }
-  
-  .theme-switch label {
-    display: inline-block;
-    padding: 6px 12px;
-    cursor: pointer;
-  }
-  
-  .theme-switch .switchery {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 40px;
-    height: 20px;
-    border-radius: 20px;
-    background-color: #ccc;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .theme-switch .switchery:before {
-    content: "";
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: #fff;
-    transition: transform 0.3s;
-  }
-  
-  .theme-switch input[type="radio"]:checked + .switchery {
-    background-color: #5cb85c;
-  }
-  
-  .theme-switch input[type="radio"]:checked + .switchery:before {
-    transform: translateX(20px);
-  }
-  
+#header {
+  padding: 10px;
+  color: var(--header-color) ;
+  font-size: 26px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+#header button {
+  background-color:var(--header-button);
+}
+#container {
+  width: 800px;
+  height: 500px;
+  margin-left: 14%;
+}
+#monthDisplay{
+  text-transform: uppercase;
+}
+#weekdays {
+  width: 100%;
+  display: flex;
+  color: var(--color-weekdays) ;
+}
+#weekdays div {
+  width: 100px;
+  padding: 10px;
+}
+#calendar {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.day {
+  width: 100px;
+  padding: 10px;
+  height: 100px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: var(--color-day);
+  margin: 5px;
+  box-shadow: 0px 0px 3px var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 15%;
+}
+.day:hover {
+  background-color: var(--hover);
+}
+
+.day + #currentDay {
+  background-color:var(--current-day);
+}
+.event {
+  font-size: 10px;
+  padding: 3px;
+  background-color: var(--event-color);
+  color: white;
+  border-radius: 5px;
+  max-height: 55px;
+  overflow: hidden;
+}
+.padding {
+  cursor: default !important;
+  background-color: var(--body-color) !important;
+  box-shadow: none !important;
+}
+#newEventModal, #deleteEventModal {
+  display: none;
+  z-index: 20;
+  padding: 25px;
+  background-color: var(--modal-event);
+  box-shadow: 0px 0px 3px black;
+  border-radius: 5px;
+  width: 350px;
+  top: 100px;
+  left: calc(50% - 175px);
+  position: absolute;
+  font-family: sans-serif;
+}
+#eventTitleInput {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 3px gray;
+}
+#eventTitleInput.error {
+  border: 2px solid red;
+}
+#cancelButton, #deleteButton {
+  background-color: var(--header-color);
+}
+#saveButton, #closeButton {
+  background-color: var(--header-button);
+}
+#eventText {
+  font-size: 14px;
+}
+#modalBackDrop {
+  display: none;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(0,0,0,0.8);
+}
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.theme-switch input[type="radio"] {
+  display: none;
+}
+
+.theme-switch label {
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.theme-switch .switchery {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.theme-switch .switchery:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: transform 0.3s;
+}
+
+.theme-switch input[type="radio"]:checked + .switchery {
+  background-color: #5cb85c;
+}
+
+.theme-switch input[type="radio"]:checked + .switchery:before {
+  transform: translateX(20px);
+}
