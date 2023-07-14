@@ -3,7 +3,11 @@
   --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
   
 }
-
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 /*BODY*/
 
 /*body {
@@ -82,7 +86,7 @@ nav {
   padding-top: 50px;
   flex-direction: row;
   flex-wrap: nowrap;
-    
+      
 }
 
 #main article {
@@ -95,20 +99,23 @@ nav {
   padding-top: 5% ;
   margin-right: 10%;
   margin-left: 10%;
+  width:50%;
+  float:max-content;
 }
 #main article h1{
 text-align: center;
-align-content: center;
 width: 800px;
 
 } 
+
 #main .round-container img {
   display: flex;
   position:relative;
-  right: 10%;
+  align-content:space-around;
+  right: 15%;
   border-radius: 100%;
-  border: 1px solid #0abab5;
-  box-shadow: 2px 2px 6px 0px #0abab5;
+  border: 1px solid #7a7676;
+  box-shadow: 2px 2px 6px 0px #7a7676;
   width: 12rem;
   height: 12rem;
  
@@ -131,4 +138,59 @@ width: 800px;
     padding: 0%;
     margin: 0 78px 0 ;
 
+}
+@media screen and (min-width: 200px) {
+  .toggle{
+  width: 100%;
+  height: auto;}
+
+}
+
+@media screen and (max-width: 600px) {
+  header div img{
+  width: 100%;
+  height: auto;}
+
+}
+
+@media screen and (max-width: 600px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: static;
+  }
+  .sidebar a {
+    float: left;
+
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+
+}
+@media screen and (max-width: 600px) {
+  #main {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+}
+@media screen and (max-width: 600px) {
+  article {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+}
+@media screen and (max-width: 600px) {
+  article p{
+    width: 100%;
+    height: auto;
+  }
 }

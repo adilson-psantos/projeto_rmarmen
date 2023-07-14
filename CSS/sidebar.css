@@ -25,7 +25,6 @@
     background-color: #0abab5;
     color: white;
   }
-  
   @media screen and (max-width: 600px) {
     .sidebar {
       width: 100%;
@@ -44,3 +43,4 @@
       float: none;
     }
   }
+  

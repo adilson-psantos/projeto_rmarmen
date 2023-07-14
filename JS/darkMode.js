@@ -60,8 +60,14 @@ checkbox.addEventListener("change", ({target}) => {
     
     for (var i = 0; i < links.length; i++) {
       links[i].style.color = (theme == "dark" ? "#ffffff" : "#7a7676");
+<<<<<<< HEAD
     }    
 
+=======
+    }
+    
+       
+>>>>>>> 8e0f185f2c2ce689af19501796e406bfbfb99921
     //Color Body
     var body = document.getElementsByTagName("body")[0];
     body.className = theme;
@@ -89,11 +95,17 @@ checkbox.addEventListener("change", ({target}) => {
     for (var i = 0; i < elementPFooter.length; i++) {
         elementPFooter[i].style.color = (theme == "dark" ? "#ffffff" :"#7a7676" );
     }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 8e0f185f2c2ce689af19501796e406bfbfb99921
     var fontcopyrights = document.getElementsByClassName("footerContainer")[0].getElementsByClassName("footer_copyrights")[0].getElementsByTagName("p")
 
     document.getElementsByClassName("footerContainer")[0].getElementsByClassName("footer_copyrights")[0].style.backgroundColor = (theme == "dark" ? "black" : "#f4f4f4");
     for (var i = 0; i < fontcopyrights.length; i++) {
         fontcopyrights[i].style.color = (theme == "dark" ? "#ffffff" : "#747676");
+<<<<<<< HEAD
         //fontcopyrights[i].style.backgroundColor = (theme == "dark" ? "#000000" : "#747676")
     }
 
@@ -106,6 +118,13 @@ function page_eventos(theme){
     document.getElementById('nextButton').style.color = (theme == "dark" ? "#241f1f" : "#ffffff");
 }
 
+=======
+        fontcopyrights[i].style.backgroundColor = (theme == "dark" ? "#000000" : "#747676")
+       
+    }
+
+})
+>>>>>>> 8e0f185f2c2ce689af19501796e406bfbfb99921
 
 // function changeTheme() {
 //     var theme = document.getElementById("input[name=theme]").value;
