@@ -87,7 +87,7 @@ checkbox.addEventListener("change", ({target}) => {
 
     var elementPFooter = document.getElementsByClassName("footerContainer")[0].getElementsByTagName("p")
     for (var i = 0; i < elementPFooter.length; i++) {
-        elementPFooter[i].style.color = (theme == "dark" ? "#7a7676" :"#ffffff" );
+        elementPFooter[i].style.color = (theme == "dark" ? "#ffffff" :"#7a7676" );
     }
 
 
