@@ -111,6 +111,7 @@ flex-direction: row;
 flex-wrap: nowrap;
 justify-content: flex-start;
 align-items: center;
+overflow: scroll;
 
 }
 aside nav {
@@ -126,6 +127,7 @@ article {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 .card {
   display: flex;
@@ -135,9 +137,9 @@ article {
   order:1;
   flex: 0 0 600px;
   padding-top: 15px;
-  height: 26em;
+  height: 30em;
   margin: 5px;
-  border-radius: 1em;
+  border-radius: 2em;
   border: 1px solid #0abab5;
   box-shadow: 2px 2px 6px 0px #0abab5;
 }
@@ -158,8 +160,6 @@ article {
   .card {
     width: 100%;
     height: auto;
-    position: static;
-    text-align: center;
-    float: none;
+    
   }
 }

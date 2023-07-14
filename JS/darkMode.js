@@ -52,7 +52,7 @@ checkbox.addEventListener("change", ({target}) => {
     var theme = target.checked ? "dark" : "light"
     
     //Color background Nav
-    document.getElementsByClassName("sidebar")[0].style.backgroundColor = (theme == "dark" ? "#44475a" :  "#ffffff")
+    document.getElementsByClassName("sidebar")[0].style.backgroundColor = (theme == "dark" ? "#000000" :  "#ffffff")
     
     //Color Font Nav
     var sidebar = document.querySelector(".sidebar");
@@ -62,6 +62,7 @@ checkbox.addEventListener("change", ({target}) => {
       links[i].style.color = (theme == "dark" ? "#ffffff" : "#7a7676");
     }
     
+       
     //Color Body
     var body = document.getElementsByTagName("body")[0];
     body.className = theme;
@@ -91,17 +92,12 @@ checkbox.addEventListener("change", ({target}) => {
     }
 
 
-
     var fontcopyrights = document.getElementsByClassName("footerContainer")[0].getElementsByClassName("footer_copyrights")[0].getElementsByTagName("p")
     for (var i = 0; i < fontcopyrights.length; i++) {
         fontcopyrights[i].style.color = (theme == "dark" ? "#ffffff" : "#747676");
         fontcopyrights[i].style.backgroundColor = (theme == "dark" ? "#000000" : "#747676")
-        fontcopyrights[i].style.backgroundColor = (theme == "dark" ? "#000000" : "#747676")
+       
     }
-    var fontcopyrights = document.getElementsByClassName("footerContainer")[0].getElementsByClassName("footer_copyrights")[0].getElementsByClassName("footer_copyrights")
-    for (var i = 0; i < fontcopyrights.length; i++) {
-        fontcopyrights[i].style.backgroundColor = (theme == "dark" ? "#000000" : "#f4f4f4")
-    } 
 
 })
 
