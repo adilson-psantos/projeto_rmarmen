@@ -96,8 +96,13 @@ checkbox.addEventListener("change", ({target}) => {
     for (var i = 0; i < fontcopyrights.length; i++) {
         fontcopyrights[i].style.color = (theme == "dark" ? "#ffffff" : "#747676");
         fontcopyrights[i].style.backgroundColor = (theme == "dark" ? "#000000" : "#747676")
-        
+        fontcopyrights[i].style.backgroundColor = (theme == "dark" ? "#000000" : "#747676")
     }
+    var fontcopyrights = document.getElementsByClassName("footerContainer")[0].getElementsByClassName("footer_copyrights")[0].getElementsByClassName("footer_copyrights")
+    for (var i = 0; i < fontcopyrights.length; i++) {
+        fontcopyrights[i].style.backgroundColor = (theme == "dark" ? "#000000" : "#f4f4f4")
+    } 
+
 })
 
 // function changeTheme() {
