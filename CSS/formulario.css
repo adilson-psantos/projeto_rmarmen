@@ -96,7 +96,7 @@ nav {
   width: 300px;
   order:-1; 
 }
-.cadastro {
+.container {
   display: flex;
   font-family: Arial, serif;
   color: var(--color-white);
@@ -116,18 +116,13 @@ nav {
     margin-bottom: 1rem;
     text-align: center;
   }
-  .cadastro form{
+  .container .cadastro{
     display: flex;
     flex-direction: column;
       
   }
-  .span-required{
-    font-size: 12px;
-    margin:3px 0 0 1px;
-    color:var(--color-black);
-    display: none;
-  }
-  .inputs{
+  
+  input{
     padding: 8px 5px;
     outline: none;
     border-radius: 5px;
@@ -148,7 +143,7 @@ nav {
     font-weight: bold;
     gap:1rem;
   }
-  button[type="submit"]{
+  button[value="submit"]{
     padding: 1rem;
     font-size: 1rem;
     outline: none;
@@ -161,11 +156,12 @@ nav {
     cursor: pointer;
     transition: .3s;
   }
- button[type="submit"]:hover{
+ button[value="submit"]:hover{
    background-color:var(--color-grey) ;
    color:var(--color-white)
  }
- @media screen and (max-width: 576px) {
+ 
+ @media screen and (max-width: 600px) {
     .select{
       flex-direction: column;
       gap:5px;
