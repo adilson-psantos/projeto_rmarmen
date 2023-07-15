@@ -14,7 +14,7 @@ function carregaPage() {
      "<p>" +
      principal[conteudo].descricao +
      "</p>" +
-     "<div class = round-conteiner>" +
+     "<div class = round-container>" +
      "<img src =>" +
      principal[conteudo].imagem +
      "</>" +
