@@ -119,7 +119,7 @@ card.text h1 {
   background-color: #0abab5;
   color: white;
   margin-top: -30px;
-  box-shadow: 2px 20px 25px #0abab5;
+  /* box-shadow: 2px 20px 25px #0abab5; */
   border-color: #0abab5;
 }
 
@@ -130,3 +130,4 @@ card.text h1 {
 .card p:hover{
   color: #fff;
 }
+
