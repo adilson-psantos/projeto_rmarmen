@@ -181,7 +181,8 @@ function page_cursos(theme){
 function changeHoverColor_darkMode(element) {
     const isChecked = checkbox.checked;
     if(isChecked){
-        element.style.backgroundColor = "#6272a4";
+        element.style.backgroundColor = "#a7a6a6";
+        element.style.color = "#ffffff"
         //element.style.color = "white";
     }
     else{
