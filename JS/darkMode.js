@@ -59,7 +59,8 @@ checkbox.addEventListener("change", ({target}) => {
     var links = sidebar.getElementsByTagName("a");
     
     for (var i = 0; i < links.length; i++) {
-      links[i].style.color = (theme == "dark" ? "#ffffff" : "#7a7676");
+        links[i].style.backgroundColor = (theme == "dark" ? "#000000" : "#ffffff");
+        links[i].style.color = (theme == "dark" ? "#ffffff" : "#7a7676");
     }    
 
     //Color Body
@@ -98,20 +99,112 @@ checkbox.addEventListener("change", ({target}) => {
     }
 
     page_eventos(theme);
+    page_depoimentos(theme);
+    page_tratamentos(theme);
+    page_cadastro(theme);
+    page_cursos(theme);
 });
 
 
 function page_eventos(theme){
-    document.getElementById('backButton').style.color = (theme == "dark" ? "#241f1f" : "#ffffff");
-    document.getElementById('nextButton').style.color = (theme == "dark" ? "#241f1f" : "#ffffff");
+    /*Botões superior do calendario*/
+    if(document.getElementById('backButton') !== null){
+        document.getElementById('backButton').style.color = (theme == "dark" ? "#241f1f" : "#ffffff");
+        document.getElementById('nextButton').style.color = (theme == "dark" ? "#241f1f" : "#ffffff");
+    }
 }
 
+function page_depoimentos(theme){
+    var containers = document.getElementsByClassName("container");
 
-// function changeTheme() {
-//     var theme = document.getElementById("input[name=theme]").value;
-//     var body = document.getElementsByTagName("body")[0];
-//     body.className = theme;
-//   }
+    if(containers.length > 0){
+        for (var i = 0; i < containers.length; i++) {
+            var card = containers[i].getElementsByClassName("card")[0];
+
+            if(card !== undefined){
+                if(theme == "dark")
+                    card.classList.add("cardDarkMode");
+                else
+                    card.classList.remove("cardDarkMode");
+            }
+        }    
+    }    
+}
+
+function page_tratamentos(theme){
+    var cards = document.getElementsByClassName("card");
+
+    if(cards.length > 0){
+        for (var i = 0; i < cards.length; i++) {            
+            if(theme == "dark"){
+                cards[i].classList.add("cardDarkMode");
+                cards[i].style.backgroundColor = "black";
+            }                
+            else{
+                cards[i].classList.remove("cardDarkMode");
+                cards[i].style.backgroundColor = "#ffffff";
+            }   
+        }    
+    }    
+}
+
+function page_cadastro(theme){
+    var container = document.getElementsByClassName("container")[0];
+
+    if(container !== undefined){
+        if(theme == "dark"){            
+            container.classList.add("formulario_cardDarkMode");
+        }                
+        else{            
+            container.classList.add("formulario_cardDarkMode");
+        }    
+    }    
+}
+
+function page_cursos(theme){
+    var buttons = document.getElementsByClassName("btn");
+
+    if(buttons.length > 0){
+        for (var i = 0; i < buttons.length; i++) {            
+            if(theme == "dark"){            
+                buttons[i].style.backgroundColor = "#6272a4"
+                buttons[i].style.border = "none"
+            }                
+            else{            
+                buttons[i].style.backgroundColor = "#0abab5"
+            }    
+        }    
+    }    
+}
+
+//Hover nos menus nav
+function changeHoverColor_darkMode(element) {
+    const isChecked = checkbox.checked;
+    if(isChecked){
+        element.style.backgroundColor = "#6272a4";
+        //element.style.color = "white";
+    }
+    else{
+        element.style.backgroundColor = "#0abab5";
+        element.style.color = "white";
+    }    
+  }
+
+  function restoreDefaultColor_darkMode(element) {
+    const isChecked = checkbox.checked;
+    if(isChecked){ 
+        element.style.backgroundColor = "black";
+        //element.style.color = "black";
+    }
+    else{
+        element.style.backgroundColor = "#ffffff";
+        element.style.color = "#7a7676";
+    }    
+  }
+
+
+
+  
 
 
 

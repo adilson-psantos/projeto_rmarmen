@@ -12,20 +12,22 @@
     <link rel="stylesheet"  type="text/css" href="/CSS/sidebar.css">
     <link rel ="stylesheet" type="text/css"  href="/CSS/footer.css">
     <link rel ="stylesheet" type="text/css"  href="/CSS/formulario.css">
-    
+    <link href="/css/darkMode.css" rel="stylesheet">
     <link rel="icon" type="image/jpg" sizes="16x16" href="/IMG/novalogo.jpg">
     <!-- Link do arquivo javascript-->
     <script src="/JS/formulario.js" defer></script>
-    <!--<script src="/JS/darkMode.js" defer></script>
+    <script src="/JS/darkMode.js" defer></script>
+    <!--
     <script src="https://cdnjs.cloudflare.com/ajax/libs/switchery/0.8.2/switchery.min.js"></script>-->
 
     <title>Instituto Armem Degumerjian</title>  
 </head>
-<!-- dark mode 
+<!-- dark mode -->
 <div class="toggle">
     <input id="switch" type="checkbox" name="theme">
     <label for="switch">Toggle</label>
- </div>-->
+</div>
+<!-- -------- -->
 <body>
     <header>  
         <div>          
@@ -36,14 +38,14 @@
         <nav>
             <section>
                 <div class="sidebar">
-                    <a href="/index.html">Home</a>
-                    <a href="/HTML/tratamentos.html">Tratamentos</a>
-                    <a href="/HTML/cursos.html">Cursos</a>
-                    <a href="/HTML/eventos.html">Eventos</a>
-                    <a href="/HTML/videos.html">Vídeos</a>
-                    <a href="/HTML/formulario.html">Cadastro</a>
-                    <a href="/HTML/depoimentos.html">Depoimentos</a>
-                </div>
+                    <a onmouseover="changeHoverColor_darkMode(this)" onmouseout="restoreDefaultColor_darkMode(this)" href="/index.html">Home</a>
+                    <a onmouseover="changeHoverColor_darkMode(this)" onmouseout="restoreDefaultColor_darkMode(this)" href="/HTML/tratamentos.html">Tratamentos</a>
+                    <a onmouseover="changeHoverColor_darkMode(this)" onmouseout="restoreDefaultColor_darkMode(this)" href="/HTML/cursos.html">Cursos</a>
+                    <a onmouseover="changeHoverColor_darkMode(this)" onmouseout="restoreDefaultColor_darkMode(this)" href="/HTML/eventos.html">Eventos</a>
+                    <a onmouseover="changeHoverColor_darkMode(this)" onmouseout="restoreDefaultColor_darkMode(this)" href="/HTML/videos.html">Vídeos</a>
+                    <a onmouseover="changeHoverColor_darkMode(this)" onmouseout="restoreDefaultColor_darkMode(this)" href="/HTML/formulario.html">Cadastro</a>
+                    <a onmouseover="changeHoverColor_darkMode(this)" onmouseout="restoreDefaultColor_darkMode(this)" href="/HTML/depoimentos.html">Depoimentos</a>
+                 </div>
             </section>
         </nav>
         <section class="container">
