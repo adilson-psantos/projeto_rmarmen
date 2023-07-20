@@ -1,0 +1,40 @@
+CREATE DATABASE projeto_rm_armem
+
+CREATE TABLE cliente (
+    id_cliente SERIAL PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE endereco (
+    id_end SERIAL PRIMARY KEY,
+    fk_id_cliente INT,
+    endereco VARCHAR(200) NOT NULL,
+    numero VARCHAR(10) NOT NULL,
+    cidade VARCHAR(100) NOT NULL,
+    estado VARCHAR(50) NOT NULL,
+    pais VARCHAR(100) NOT NULL,
+    cep VARCHAR(10) NOT NULL,
+    CONSTRAINT fk_cliente FOREIGN KEY (fk_id_cliente) REFERENCES cliente(id_cliente)
+);
+
+CREATE TABLE email (
+    id_email SERIAL PRIMARY KEY,
+    fk_id_cliente INT,
+    email VARCHAR(100) NOT NULL,
+     CONSTRAINT fk_cliente FOREIGN KEY (fk_id_cliente) REFERENCES cliente(id_cliente)
+);
+
+CREATE TABLE telefone (
+    id_tel SERIAL PRIMARY KEY,
+    fk_id_cliente INT,
+    telefone VARCHAR(20) NOT NULL,
+    CONSTRAINT fk_cliente FOREIGN KEY (fk_id_cliente) REFERENCES cliente(id_cliente)
+);
+
+CREATE TABLE contato (
+    id_contato SERIAL PRIMARY KEY,
+    fk_id_cliente INT,
+    motivo VARCHAR(100) NOT NULL,
+    descricao TEXT,
+    CONSTRAINT fk_cliente FOREIGN KEY (fk_id_cliente) REFERENCES cliente(id_cliente)
+);

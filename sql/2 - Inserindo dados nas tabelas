@@ -1,0 +1,47 @@
+-- inserindo nome dos clientes
+
+INSERT INTO cliente (nome) VALUES
+('João da Silva'),
+('Maria Oliveira'),
+('Pedro Santos'),
+('Ana Costa'),
+('Luiz Pereira');
+
+--inserir endereco dos clientes
+
+INSERT INTO endereco (fk_id_cliente, endereco, numero, cidade, estado, pais, cep) VALUES
+(1, 'Rua A', '123', 'São Paulo', 'SP', 'Brasil', '01234-567'),
+(2, 'Avenida B', '456', 'Rio de Janeiro', 'RJ', 'Brasil', '23456-789'),
+(3, 'Rua C', '789', 'Belo Horizonte', 'MG', 'Brasil', '34567-890'),
+(4, 'Rua D', '987', 'Salvador', 'BA', 'Brasil', '45678-901'),
+(5, 'Avenida E', '543', 'Porto Alegre', 'RS', 'Brasil', '56789-012');
+
+-- inserir e-mail clientes
+
+INSERT INTO email (fk_id_cliente, email) VALUES
+(1, 'joao@example.com'),
+(2, 'maria@example.com'),
+(3, 'pedro@example.com'),
+(4, 'ana@example.com'),
+(5, 'luiz@example.com');
+
+
+
+-- inserir telefone dos clientes
+
+INSERT INTO telefone (fk_id_cliente, telefone) VALUES
+(1, '(11) 1234-5678'),
+(2, '(21) 2345-6789'),
+(3, '(31) 3456-7890'),
+(4, '(71) 4567-8901'),
+(5, '(51) 5678-9012');
+
+--inserindo o motivo dos contatos
+
+INSERT INTO contato (fk_id_cliente, motivo, descricao) VALUES
+(1, 'Dúvida', 'Preciso de ajuda com o produto X.'),
+(2, 'Sugestão', 'Gostaria de sugerir uma melhoria no serviço Y.'),
+(3, 'Reclamação', 'Estou insatisfeito com o atendimento recebido.'),
+(4, 'Elogio', 'Parabéns pelo excelente serviço prestado.'),
+(5, 'Informação', 'Gostaria de obter mais informações sobre o serviço Z.');
+
