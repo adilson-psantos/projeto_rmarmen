@@ -6,7 +6,7 @@ select * from email
 select * from endereco
 select * from telefone
 
--- utilizando o join em duas tabelas contato e telefone
+-- utilizando o join em três  tabelas cliente, contato e telefone
 select id_cliente, nome, motivo, descricao, telefone from cliente
 INNER JOIN contato
 ON id_cliente = fk_id_cliente
@@ -14,7 +14,8 @@ INNER JOIN telefone
 ON telefone.fk_id_cliente = id_cliente
 
 
---- utilizando where
+--- utilizando o join para consultar as tabelas cliente, contato e telefone e filtrando com  where
+
 select id_cliente, nome, motivo, descricao, telefone from cliente
 INNER JOIN contato
 ON id_cliente = fk_id_cliente
@@ -22,8 +23,21 @@ INNER JOIN telefone
 ON telefone.fk_id_cliente = id_cliente
 where id_cliente = 4
 
--- utilizando join e alias
+-- Utilizando o Join nas para consultar as tabelas cliente, endereço e email e utilizando o where
+
+select id_cliente, nome, id_end, endereco, estado, pais, email from cliente
+INNER JOIN endereco
+ON id_cliente = fk_id_cliente
+INNER JOIN email
+ON email.fk_id_cliente = id_cliente
+WHERE estado = 'SP';
+
+
+-- utilizando join para consultar as tabelas cliente e endereço e utilizando o  alias para trocar os nomes
+--dos atributos nome para nomes, id_end para id_endereco e cidade para Cid
+
 select id_cliente, nome AS nomes, id_end as id_endereco, cidade AS Cid from cliente
 LEFT JOIN endereco
 ON endereco.fk_id_cliente = id_cliente
 where id_cliente = 4
+
