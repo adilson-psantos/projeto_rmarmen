@@ -167,3 +167,9 @@ nav {
       gap:5px;
     }
  }
+
+ .formulario_cardDarkMode{
+  border: 1px solid #6272a4;
+  box-shadow: 0px 0px 5px 6px #6272a4;
+  background-color: black;
+}
