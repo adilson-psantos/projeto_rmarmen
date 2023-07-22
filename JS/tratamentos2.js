@@ -2,7 +2,7 @@ const arrayTratamentos =[
     {
         titulo:"Radiestesia Magnética Imantada",
         subtitulo : "Entendendo melhor a Radiestesia Magnetica Imantada",
-        texto:"A princípio usamos o pêndulo de cristal como principal instrumento radiestésico, pois este emana uma frequência de ondas magnéticas e gravitacional de forma espiral em torno da pessoa, objeto ou local a ser trabalhado. No momento da aplicação a pessoa fica imantada, seu corpo começa se mover espontaneamente e a espiral de Luz entra em ação. Esta é a propriedade inicial da Radiestesia Magnética Imantada, os obstáculos inconscientes são removidos como que aspirados pelos teus chakras… assim é removido aos poucos o peso do medo e vem a conquista da abundância."
+        texto:"A princípio usamos o pêndulo de cristal como principal instrumento radiestésico, pois este emana uma frequência de ondas magnéticas e gravitacional de forma espiral em torno da pessoa, objeto ou local a ser trabalhado. No momento da aplicação a pessoa fica imantada, seu corpo começa se mover espontaneamente e a espiral de Luz entra em ação. Esta é a propriedade inicial da Radiestesia Magnética Imantada, os obstáculos inconscientes são removidos como que aspirados pelos teus chakras… assim é removido aos poucos o peso do medo e vem a conquista da abundância.",
     },
     {
         titulo:"Registro da Memória Celular",
