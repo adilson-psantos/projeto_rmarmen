@@ -71,8 +71,8 @@ html{
   --box-shadow: #CBD4C2;
   --hover: #e8faed;
   --current-day:#d0fcfd;
-  --button-color:#0abab5
-  --event-color: #58bae4;
+  --button-color:#0abab5;
+  --event-color: #0abab5;
   --modal-event: #e8f4fa;
   --color-day:white;
 }
