@@ -100,7 +100,7 @@ function load (){
 
       }
 
-      dayS.addEventListener('click', ()=> openModal(dayString))
+      //dayS.addEventListener('click', ()=> openModal(dayString))
 
     } else {
       dayS.classList.add('padding')
